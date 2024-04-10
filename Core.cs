@@ -24,8 +24,8 @@ namespace NAV_HR_WINDOW
 				NoSeries_Service.NoSerialIntegration_Service NSeries = new NoSeries_Service.NoSerialIntegration_Service ( );
 
 				//passing the credential to access the webservice. The user must have access on Navision and also active on the domain
-				//NSeries.Credentials = new NetworkCredential ( "coretec", "Ibukun@lag", "pensure-nigeria.com" );
-				NSeries.Credentials = new NetworkCredential("fundadmin2", "@Pass2023Galaxy1", "pensure-nigeria");
+				
+				NSeries.Credentials = new NetworkCredential("****", "****", "****");
 				NSeries.PreAuthenticate = true;
 
 			    List<NoSeries.NoSerialIntegration_Filter> NSeriesFilterArray = new List<NoSeries.NoSerialIntegration_Filter> ( );
@@ -55,8 +55,8 @@ namespace NAV_HR_WINDOW
 		    {
 				RCenter_Service.ResponsibilityCenter_Service RC = new RCenter_Service.ResponsibilityCenter_Service ( );
 			    //passing the credential to access the webservice. The user must have access on Navision and also active on the domain
-			    //RC.Credentials = new NetworkCredential ( "coretec", "Ibukun@lag", "pensure-nigeria.com" );
-				RC.Credentials = new NetworkCredential("fundadmin2", "@Pass2023Galaxy1", "pensure-nigeria");
+			    
+				RC.Credentials = new NetworkCredential("****", "****", "****");
 				RC.PreAuthenticate = true;
 			    List<RCenter_Service.ResponsibilityCenter_Filter> RCFilterArray = new List<RCenter_Service.ResponsibilityCenter_Filter> ( );
 				RCenter_Service.ResponsibilityCenter_Filter RCFilter = new RCenter_Service.ResponsibilityCenter_Filter ( );
@@ -112,9 +112,9 @@ namespace NAV_HR_WINDOW
             {
                 RCenter_Service.ResponsibilityCenter_Service RC = new RCenter_Service.ResponsibilityCenter_Service();
                 //passing the credential to access the webservice. The user must have access on Navision and also active on the domain
-                //RC.Credentials = new NetworkCredential ( "coretec", "Ibukun@lag", "pensure-nigeria.com" );
+                
 
-                RC.Credentials = new NetworkCredential("fundadmin2", "@Pass2023Galaxy1", "pensure-nigeria");
+                RC.Credentials = new NetworkCredential("****", "****", "****");
                 RC.PreAuthenticate = true;
                 List<RCenter_Service.ResponsibilityCenter_Filter> RCFilterArray = new List<RCenter_Service.ResponsibilityCenter_Filter>();
                 RCenter_Service.ResponsibilityCenter_Filter RCFilter = new RCenter_Service.ResponsibilityCenter_Filter();
@@ -174,8 +174,8 @@ namespace NAV_HR_WINDOW
 				LeaveTypes_Service.LeaveTypes_Service LTypes = new LeaveTypes_Service.LeaveTypes_Service ( );
 				//passing the credential to access the webservice. The user must have access on Navision and also active on the domain
 
-				//LTypes.Credentials = new NetworkCredential ( "coretec", "Ibukun@lag", "pensure-nigeria.com" );
-				LTypes.Credentials = new NetworkCredential("fundadmin2", "@Pass2023Galaxy1", "pensure-nigeria");
+				
+				LTypes.Credentials = new NetworkCredential("****", "****", "****");
 				LTypes.PreAuthenticate = true;
 			    List<LeaveTypes_Service.LeaveTypes_Filter> LeaveTypeFilterArray = new List<LeaveTypes_Service.LeaveTypes_Filter> ( );
 
@@ -225,8 +225,8 @@ namespace NAV_HR_WINDOW
 				HRSetup_Service.HRSetup_Service hrSetup = new HRSetup_Service.HRSetup_Service ( );
 				//passing the credential to access the webservice. The user must have access on Navision and also active on the domain
 
-				//hrSetup.Credentials = new NetworkCredential ( "coretec", "Ibukun@lag", "pensure-nigeria.com" );
-				hrSetup.Credentials = new NetworkCredential("fundadmin2", "@Pass2023Galaxy1", "pensure-nigeria");
+				
+				hrSetup.Credentials = new NetworkCredential("****", "****", "****");
 				hrSetup.PreAuthenticate = true;
 			    List<HRSetup_Service.HRSetup_Filter> hrSetupFilterArray = new List<HRSetup_Service.HRSetup_Filter> ( );
 
@@ -283,7 +283,7 @@ namespace NAV_HR_WINDOW
 
                 //passing the credential to access the webservice. The user must have access on Navision and also active on the domain
 
-                itemledgerEntries.Credentials = new NetworkCredential("fundadmin2", "@Pass2023Galaxy1", "pensure-nigeria");
+                itemledgerEntries.Credentials = new NetworkCredential("****", "****", "****");
                 itemledgerEntries.PreAuthenticate = true;
                 List<ItemLedgerEntries_Service.ItemLedgerEntries_Filter> itemLedgerFilterArray = new List<ItemLedgerEntries_Service.ItemLedgerEntries_Filter>();
 
@@ -338,8 +338,8 @@ namespace NAV_HR_WINDOW
                 ProbationConfirmationList_Service.ProbationConfirmationList_Service empConfirmationList = new ProbationConfirmationList_Service.ProbationConfirmationList_Service();
                 //passing the credential to access the webservice. The user must have access on Navision and also active on the domain
 
-                //empList.Credentials = new NetworkCredential ( "coretec", "Ibukun@lag", "pensure-nigeria.com" );
-                empConfirmationList.Credentials = new NetworkCredential("fundadmin2", "@Pass2023Galaxy1", "pensure-nigeria");
+                
+                empConfirmationList.Credentials = new NetworkCredential("****", "****", "****");
                 empConfirmationList.PreAuthenticate = true;
                 List<ProbationConfirmationList_Service.ProbationConfirmationList_Filter> empListFilterArray = new List<ProbationConfirmationList_Service.ProbationConfirmationList_Filter>();
 
@@ -392,8 +392,8 @@ namespace NAV_HR_WINDOW
                 ProbationConfirmationCard_Service.ConfirmationCard_Service empConfirmation = new ProbationConfirmationCard_Service.ConfirmationCard_Service();
                 //passing the credential to access the webservice. The user must have access on Navision and also active on the domain
 
-                //empList.Credentials = new NetworkCredential ( "coretec", "Ibukun@lag", "pensure-nigeria.com" );
-                empConfirmation.Credentials = new NetworkCredential("fundadmin2", "@Pass2023Galaxy1", "pensure-nigeria");
+                
+                empConfirmation.Credentials = new NetworkCredential("****", "****", "****");
                 empConfirmation.PreAuthenticate = true;
                 List<ProbationConfirmationCard_Service.ConfirmationCard_Filter> empConfFilterArray = new List<ProbationConfirmationCard_Service.ConfirmationCard_Filter>();
 
@@ -477,7 +477,7 @@ namespace NAV_HR_WINDOW
                 HREmployeeList.HREmployeeListNew_Service empList = new HREmployeeList.HREmployeeListNew_Service( );
 				//passing the credential to access the webservice. The user must have access on Navision and also active on the domain
 
-				empList.Credentials = new NetworkCredential("fundadmin2", "@Pass2023Galaxy1", "pensure-nigeria");
+				empList.Credentials = new NetworkCredential("****", "****", "****");
 				empList.PreAuthenticate = true;
 			    List<HREmployeeList.HREmployeeListNew_Filter> empListFilterArray = new List<HREmployeeList.HREmployeeListNew_Filter> ( );
 
@@ -537,7 +537,7 @@ namespace NAV_HR_WINDOW
                 HREmployeeList.HREmployeeListNew_Service empList = new HREmployeeList.HREmployeeListNew_Service();
                 //passing the credential to access the webservice. The user must have access on Navision and also active on the domain
 
-                empList.Credentials = new NetworkCredential("fundadmin2", "@Pass2023Galaxy1", "pensure-nigeria");
+                empList.Credentials = new NetworkCredential("****", "****", "****");
                 empList.PreAuthenticate = true;
                 List<HREmployeeList.HREmployeeListNew_Filter> empListFilterArray = new List<HREmployeeList.HREmployeeListNew_Filter>();
 
@@ -601,8 +601,8 @@ namespace NAV_HR_WINDOW
 			    
 			    //passing the credential to access the webservice. The user must have access on Navision and also active on the domain
 
-			    //myLeaveAppAcks.Credentials = new NetworkCredential ( "coretec", "Ibukun@lag", "pensure-nigeria.com" );
-				myLeaveAppAcks.Credentials = new NetworkCredential("fundadmin2", "@Pass2023Galaxy1", "pensure-nigeria");
+			    
+				myLeaveAppAcks.Credentials = new NetworkCredential("****", "****", "****");
 				myLeaveAppAcks.PreAuthenticate = true;
 
 			    List<LeaveAcknowledgmentList.LeaveAcknowledgmentList_Filter> myLeavesAckFilterArray = new List<LeaveAcknowledgmentList.LeaveAcknowledgmentList_Filter> ( );
@@ -660,72 +660,6 @@ namespace NAV_HR_WINDOW
 	    }
 
 
-	    //Retrieving the list of Posted leave applications per employee
-	   // public DataTable getPostedLeaveApplicationList ( string EmployeeNo )
-	   // {
-		  //  DataTable tblApplicationList = new DataTable ( "ApplicationList" );
-		  //  try
-		  //  {
-
-			 //   LeaveApplicationList.LeaveApplicationAll_Service myLeaveApps = new LeaveApplicationList.LeaveApplicationAll_Service ( );
-				////passing the credential to access the webservice. The user must have access on Navision and also active on the domain
-
-				////myLeaveApps.Credentials = new NetworkCredential ( "coretec", "Ibukun@lag", "pensure-nigeria.com" );
-				//myLeaveApps.Credentials = new NetworkCredential("fundadmin2", "@Pass2023Galaxy1", "pensure-nigeria");
-				//myLeaveApps.PreAuthenticate = true;
-			 //   List<LeaveApplicationList.LeaveApplicationAll_Filter> myLeavesListFilterArray = new List<LeaveApplicationList.LeaveApplicationAll_Filter> ( );
-
-			 //   LeaveApplicationList.LeaveApplicationAll_Filter myLeavesListFilter = new LeaveApplicationList.LeaveApplicationAll_Filter ( );
-			 //   LeaveApplicationList.LeaveApplicationAll_Filter myLeavesStatusFilter = new LeaveApplicationList.LeaveApplicationAll_Filter ( );
-
-
-			 //   myLeavesListFilter.Field = LeaveApplicationList.LeaveApplicationAll_Fields.Employee_No;
-			 //   myLeavesListFilter.Criteria = EmployeeNo;
-
-			 //   myLeavesStatusFilter.Field = LeaveApplicationList.LeaveApplicationAll_Fields.Status;
-			 //   //myLeavesStatusFilter.Criteria = "<> Resumed & <> Posted";
-			 //   myLeavesStatusFilter.Criteria = "Posted";
-
-			 //   myLeavesListFilterArray.Add ( myLeavesListFilter );
-			 //   myLeavesListFilterArray.Add ( myLeavesStatusFilter );
-
-			 //   // Runs the actual search.
-
-			 //   LeaveApplicationList.LeaveApplicationAll[] results = myLeaveApps.ReadMultiple ( myLeavesListFilterArray.ToArray ( ), null, 1000 );
-
-			 //   tblApplicationList.Columns.Add ( new DataColumn ( "ApplicationNo", typeof ( string ) ) );
-			 //   tblApplicationList.Columns.Add ( new DataColumn ( "EmployeeNo", typeof ( string ) ) );
-			 //   tblApplicationList.Columns.Add ( new DataColumn ( "EmployeeName", typeof ( string ) ) );
-			 //   tblApplicationList.Columns.Add ( new DataColumn ( "LeaveType", typeof ( string ) ) );
-			 //   tblApplicationList.Columns.Add ( new DataColumn ( "DaysApplied", typeof ( string ) ) );
-			 //   tblApplicationList.Columns.Add ( new DataColumn ( "StartDate", typeof ( DateTime ) ) );
-			 //   tblApplicationList.Columns.Add ( new DataColumn ( "EndDate", typeof ( DateTime ) ) );
-			 //   tblApplicationList.Columns.Add ( new DataColumn ( "Releaver", typeof ( string ) ) );
-			 //   tblApplicationList.Columns.Add ( new DataColumn ( "Status", typeof ( string ) ) );
-
-
-			 //   int i = 0;
-			 //   while (i < results.Length)
-			 //   {
-
-				//    tblApplicationList.Rows.Add ( results[i].Application_Code, results[i].Employee_No, results[i].Names, results[i].Leave_Type, results[i].Days_Applied, results[i].Start_Date, results[i].Return_Date, results[i].Reliever_Name, results[i].Status );
-				//    i++;
-			 //   }
-
-
-		  //  }
-		  //  catch (Exception ex)
-		  //  {
-			 //   //Logger.Logger applog = new Logger.Logger ( );
-			 //   //applog.FileSource = "NAV - Interface";
-			 //   //applog.FilePath = System.Reflection.Assembly.GetExecutingAssembly ( ).Location;
-			 //   //applog.Logger ( ex.Message );
-		  //  }
-
-		  //  return tblApplicationList;
-	   // }
-
-
 	    //Retrieving the list of leave applications per employee
 	    public DataTable getLeaveApplicationList (string EmployeeNo )
 	    {
@@ -736,8 +670,8 @@ namespace NAV_HR_WINDOW
 				LeaveApplicationList_Service.LeaveApplicationAll_Service myLeaveApps = new LeaveApplicationList_Service.LeaveApplicationAll_Service ( );
 			    //passing the credential to access the webservice. The user must have access on Navision and also active on the domain
 
-			    //myLeaveApps.Credentials = new NetworkCredential ( "coretec", "Ibukun@lag", "pensure-nigeria.com" );
-				myLeaveApps.Credentials = new NetworkCredential("fundadmin2", "@Pass2023Galaxy1", "pensure-nigeria");
+			    
+				myLeaveApps.Credentials = new NetworkCredential("****", "****", "****");
 				myLeaveApps.PreAuthenticate = true;
 			    List<LeaveApplicationList_Service.LeaveApplicationAll_Filter> myLeavesListFilterArray = new List<LeaveApplicationList_Service.LeaveApplicationAll_Filter> ( );
 
@@ -790,83 +724,6 @@ namespace NAV_HR_WINDOW
 		    return tblApplicationList;
 	    }
 
-
-	    //Retrieving Account chart
-	   // public DataTable getAccountChart ( string EmployeeNo )
-	   // {
-		  //  DataTable tblApplicationList = new DataTable ( "AccountChart" );
-		  //  try
-		  //  {
-
-			 //   AccountChart.AccChart_Service acChart = new AccountChart.AccChart_Service ( );
-			 //   acChart.Credentials = new NetworkCredential ( "coretec", "Ibukun@lag", "pensure-nigeria" );
-				
-
-				//acChart.PreAuthenticate = true;
-
-			 //   List<AccountChart.AccChart_Filter> myAccChartFilterArray = new List<AccountChart.AccChart_Filter> ( );
-			 //   AccountChart.AccChart_Filter myAccChartFilter = new AccountChart.AccChart_Filter ( );
-
-			 //   myAccChartFilter.Field = AccountChart.AccChart_Fields.Account_Type;
- 
-
-			 //   LeaveApplicationList.LeaveApplicationAll_Service myLeaveApps = new LeaveApplicationList.LeaveApplicationAll_Service ( );
-			 //   //passing the credential to access the webservice. The user must have access on Navision and also active on the domain
-
-			 //   myLeaveApps.Credentials = new NetworkCredential ( "coretec", "Ibukun@lag", "pensure-nigeria" );
-			 //   myLeaveApps.PreAuthenticate = true;
-			 //   List<LeaveApplicationList.LeaveApplicationAll_Filter> myLeavesListFilterArray = new List<LeaveApplicationList.LeaveApplicationAll_Filter> ( );
-
-			 //   LeaveApplicationList.LeaveApplicationAll_Filter myLeavesListFilter = new LeaveApplicationList.LeaveApplicationAll_Filter ( );
-			 //   LeaveApplicationList.LeaveApplicationAll_Filter myLeavesStatusFilter = new LeaveApplicationList.LeaveApplicationAll_Filter ( );
-
-
-			 //   myLeavesListFilter.Field = LeaveApplicationList.LeaveApplicationAll_Fields.Employee_No;
-			 //   myLeavesListFilter.Criteria = EmployeeNo;
-
-			 //   myLeavesStatusFilter.Field = LeaveApplicationList.LeaveApplicationAll_Fields.Status;
-			 //   myLeavesStatusFilter.Criteria = "<> Resumed & <> Posted";
-
-			 //   myLeavesListFilterArray.Add ( myLeavesListFilter );
-			 //   myLeavesListFilterArray.Add ( myLeavesStatusFilter );
-
-			 //   // Runs the actual search.
-
-			 //   LeaveApplicationList.LeaveApplicationAll[] results = myLeaveApps.ReadMultiple ( myLeavesListFilterArray.ToArray ( ), null, 1000 );
-
-			 //   tblApplicationList.Columns.Add ( new DataColumn ( "ApplicationNo", typeof ( string ) ) );
-			 //   tblApplicationList.Columns.Add ( new DataColumn ( "EmployeeNo", typeof ( string ) ) );
-			 //   tblApplicationList.Columns.Add ( new DataColumn ( "EmployeeName", typeof ( string ) ) );
-			 //   tblApplicationList.Columns.Add ( new DataColumn ( "LeaveType", typeof ( string ) ) );
-			 //   tblApplicationList.Columns.Add ( new DataColumn ( "DaysApplied", typeof ( string ) ) );
-			 //   tblApplicationList.Columns.Add ( new DataColumn ( "StartDate", typeof ( DateTime ) ) );
-			 //   tblApplicationList.Columns.Add ( new DataColumn ( "EndDate", typeof ( DateTime ) ) );
-			 //   tblApplicationList.Columns.Add ( new DataColumn ( "Releaver", typeof ( string ) ) );
-			 //   tblApplicationList.Columns.Add ( new DataColumn ( "Status", typeof ( string ) ) );
-
-
-			 //   int i = 0;
-			 //   while (i < results.Length)
-			 //   {
-
-				//    tblApplicationList.Rows.Add ( results[i].Application_Code, results[i].Employee_No, results[i].Names, results[i].Leave_Type, results[i].Days_Applied, results[i].Start_Date, results[i].Return_Date, results[i].Reliever_Name, results[i].Status );
-				//    i++;
-			 //   }
-
-
-		  //  }
-		  //  catch (Exception ex)
-		  //  {
-			 //   //Logger.Logger applog = new Logger.Logger ( );
-			 //   //applog.FileSource = "NAV - Interface";
-			 //   //applog.FilePath = System.Reflection.Assembly.GetExecutingAssembly ( ).Location;
-			 //   //applog.Logger ( ex.Message );
-		  //  }
-
-		  //  return tblApplicationList;
-	   // }
-
-
 	    //Retrieving employee Leave for edit
 	    public DataTable getLeaveApplicationForEdit ( string LeaveNo )
 	    {
@@ -877,8 +734,7 @@ namespace NAV_HR_WINDOW
 			    
 			    //passing the credential to access the webservice. The user must have access on Navision and also active on the domain
 
-			    //myLeaveApp.Credentials = new NetworkCredential ( "coretec", "Ibukun@lag", "pensure-nigeria.com" );
-				myLeaveApp.Credentials = new NetworkCredential("fundadmin2", "@Pass2023Galaxy1", "pensure-nigeria");
+				myLeaveApp.Credentials = new NetworkCredential("****", "****", "****");
 				myLeaveApp.PreAuthenticate = true;
 			    List<LeaveCard_Service.LeaveApplication_Filter> myLeaveListFilterArray = new List<LeaveCard_Service.LeaveApplication_Filter> ( );
 
@@ -938,7 +794,7 @@ namespace NAV_HR_WINDOW
             {
                 SHFApprovalEntries.SHFApprovalEntries_Service myApprovalEntries = new SHFApprovalEntries.SHFApprovalEntries_Service();
                 
-                myApprovalEntries.Credentials = new NetworkCredential("fundadmin2", "@Pass2023Galaxy1", "pensure-nigeria");
+                myApprovalEntries.Credentials = new NetworkCredential("****", "****", "****");
                 myApprovalEntries.PreAuthenticate = true;
 
 
@@ -992,7 +848,7 @@ namespace NAV_HR_WINDOW
 
                 ApprovalEntries.SHFApprovalEntries_Service myApprovalEntries = new ApprovalEntries.SHFApprovalEntries_Service();
 
-                myApprovalEntries.Credentials = new NetworkCredential("fundadmin2", "@Pass2023Galaxy1", "pensure-nigeria");
+                myApprovalEntries.Credentials = new NetworkCredential("****", "****", "****");
                 myApprovalEntries.PreAuthenticate = true;
                 List<ApprovalEntries.SHFApprovalEntries_Filter> myApprovalEntryFilterArray = new List<ApprovalEntries.SHFApprovalEntries_Filter>();
 
@@ -1048,8 +904,8 @@ namespace NAV_HR_WINDOW
 				//EmployeeCard.EmployeeCard_Service empCard = new EmployeeCard.EmployeeCard_Service ( );
 				//passing the credential to access the webservice. The user must have access on Navision and also active on the domain
 
-				// empCard.Credentials = new NetworkCredential ( "coretec", "Ibukun@lag", "pensure-nigeria.com" );
-				empCard.Credentials = new NetworkCredential("fundadmin2", "@Pass2023Galaxy1", "pensure-nigeria");
+				
+				empCard.Credentials = new NetworkCredential("****", "****", "****");
 				empCard.PreAuthenticate = true;
 			    List<EmployeeCard_Service.HREmployeeCard_Filter> empCardFilterArray = new List<EmployeeCard_Service.HREmployeeCard_Filter> ( );
 
@@ -1122,7 +978,7 @@ namespace NAV_HR_WINDOW
             {
 
                 LocationCodes_Service.LocationCodes_Service locationCode = new LocationCodes_Service.LocationCodes_Service();
-                locationCode.Credentials = new NetworkCredential("fundadmin2", "@Pass2023Galaxy1", "pensure-nigeria");
+                locationCode.Credentials = new NetworkCredential("****", "****", "****");
                 locationCode.PreAuthenticate = true;
                 List<LocationCodes_Service.LocationCodes_Filter> lCodeFilterArray = new List<LocationCodes_Service.LocationCodes_Filter>();
 
@@ -1187,7 +1043,7 @@ namespace NAV_HR_WINDOW
 
                 LocationCodes_Service.LocationCodes_Service locationCode = new LocationCodes_Service.LocationCodes_Service();
                 
-                locationCode.Credentials = new NetworkCredential("fundadmin2", "@Pass2023Galaxy1", "pensure-nigeria");
+                locationCode.Credentials = new NetworkCredential("****", "****", "****");
                 locationCode.PreAuthenticate = true;
                 List<LocationCodes_Service.LocationCodes_Filter> lCodeFilterArray = new List<LocationCodes_Service.LocationCodes_Filter>();
 
@@ -1244,8 +1100,8 @@ namespace NAV_HR_WINDOW
                 //EmployeeCard.EmployeeCard_Service empCard = new EmployeeCard.EmployeeCard_Service ( );
                 //passing the credential to access the webservice. The user must have access on Navision and also active on the domain
 
-                // empCard.Credentials = new NetworkCredential ( "coretec", "Ibukun@lag", "pensure-nigeria.com" );
-                locationlist.Credentials = new NetworkCredential("fundadmin2", "@Pass2023Galaxy1", "pensure-nigeria");
+                
+                locationlist.Credentials = new NetworkCredential("****", "****", "****");
                 locationlist.PreAuthenticate = true;
                 List<LocationList_Service.LocationList_Filter> lCodeFilterArray = new List<LocationList_Service.LocationList_Filter>();
 
@@ -1293,8 +1149,8 @@ namespace NAV_HR_WINDOW
 				EmployeeCard_Service.HREmployeeCard_Service empCard = new EmployeeCard_Service.HREmployeeCard_Service ( );
 				//passing the credential to access the webservice. The user must have access on Navision and also active on the domain
 				
-				empCard.Credentials = new NetworkCredential("fundadmin2", "@Pass2023Galaxy1", "pensure-nigeria");
-				//empCard.Credentials = new NetworkCredential ( "coretec", "Ibukun@lag", "pensure-nigeria.com" );
+				empCard.Credentials = new NetworkCredential("****", "****", "****");
+				
 			    empCard.PreAuthenticate = true;
 			    List<EmployeeCard_Service.HREmployeeCard_Filter> empCardFilterArray = new List<EmployeeCard_Service.HREmployeeCard_Filter> ( );
 
@@ -1342,8 +1198,8 @@ namespace NAV_HR_WINDOW
 				EmployeeCard_Service.HREmployeeCard_Service empCard = new EmployeeCard_Service.HREmployeeCard_Service ( );
 			    //passing the credential to access the webservice. The user must have access on Navision and also active on the domain
 
-			    //empCard.Credentials = new NetworkCredential ( "coretec", "Ibukun@lag", "pensure-nigeria.com" );
-				empCard.Credentials = new NetworkCredential("fundadmin2", "@Pass2023Galaxy1", "pensure-nigeria");
+			    
+				empCard.Credentials = new NetworkCredential("****", "****", "****");
 				empCard.PreAuthenticate = true;
 			    List<EmployeeCard_Service.HREmployeeCard_Filter> empCardFilterArray = new List<EmployeeCard_Service.HREmployeeCard_Filter> ( );
 
@@ -1398,8 +1254,8 @@ namespace NAV_HR_WINDOW
 
 				//passing the credential to access the webservice. The user must have access on Navision and also active on the domain
 
-				//empReleavers.Credentials = new NetworkCredential ( "coretec", "Ibukun@lag", "pensure-nigeria" );
-				empReleavers.Credentials = new NetworkCredential("fundadmin2", "@Pass2023Galaxy1", "pensure-nigeria");
+				
+				empReleavers.Credentials = new NetworkCredential("****", "****", "****");
 				empReleavers.PreAuthenticate = true;
 			    List<ReLeavers_Service.Releavers_Filter> empReleaversFilterArray = new List<ReLeavers_Service.Releavers_Filter> ( );
 
@@ -1453,7 +1309,7 @@ namespace NAV_HR_WINDOW
 
                  
                 HRCanteenApplication_Service.HRCanteenApplicationCard_Service empCanteenApp = new HRCanteenApplication_Service.HRCanteenApplicationCard_Service();
-                empCanteenApp.Credentials = new NetworkCredential("fundadmin2", "@Pass2023Galaxy1", "pensure-nigeria");
+                empCanteenApp.Credentials = new NetworkCredential("****", "****", "****");
                 empCanteenApp.PreAuthenticate = true;
 
                 List<HRCanteenApplication_Service.HRCanteenApplicationCard_Filter> empCanteenFilterArray = new List<HRCanteenApplication_Service.HRCanteenApplicationCard_Filter>();
@@ -1524,7 +1380,7 @@ namespace NAV_HR_WINDOW
             {
 
                 HRCanteenApplicationList_Service.HRCanteenApplicationList_Service empCanteenApp = new HRCanteenApplicationList_Service.HRCanteenApplicationList_Service();
-                empCanteenApp.Credentials = new NetworkCredential("fundadmin2", "@Pass2023Galaxy1", "pensure-nigeria");
+                empCanteenApp.Credentials = new NetworkCredential("****", "****", "****");
                 empCanteenApp.PreAuthenticate = true;
                 List<HRCanteenApplicationList_Service.HRCanteenApplicationList_Filter> empCanteenFilterArray = new List<HRCanteenApplicationList_Service.HRCanteenApplicationList_Filter>();
                 HRCanteenApplicationList_Service.HRCanteenApplicationList_Filter CanteenFilter = new HRCanteenApplicationList_Service.HRCanteenApplicationList_Filter();
@@ -1579,7 +1435,7 @@ namespace NAV_HR_WINDOW
             {
 
                 StaffClaimLine_Service.StaffClaimLine_Service StaffClaimLine = new StaffClaimLine_Service.StaffClaimLine_Service();
-                StaffClaimLine.Credentials = new NetworkCredential("fundadmin2", "@Pass2023Galaxy1", "pensure-nigeria");
+                StaffClaimLine.Credentials = new NetworkCredential("****", "****", "****");
                 StaffClaimLine.PreAuthenticate = true;
                 StaffClaimLine.Delete(_key);
 
@@ -1598,7 +1454,7 @@ namespace NAV_HR_WINDOW
             {
 
                 StaffAdvanceLines_Service.StaffAdvanceLines_Service staffAdvLine = new StaffAdvanceLines_Service.StaffAdvanceLines_Service();
-                staffAdvLine.Credentials = new NetworkCredential("fundadmin2", "@Pass2023Galaxy1", "pensure-nigeria");
+                staffAdvLine.Credentials = new NetworkCredential("****", "****", "****");
                 staffAdvLine.PreAuthenticate = true;
                 staffAdvLine.Delete(_key);
                
@@ -1619,7 +1475,7 @@ namespace NAV_HR_WINDOW
                 WorkRetirementLine_Service.RetirementLine _retirementLine = new WorkRetirementLine_Service.RetirementLine();
 
                 WorkRetirementLine_Service.RetirementLine_Service staffRetirementLine = new WorkRetirementLine_Service.RetirementLine_Service();
-                staffRetirementLine.Credentials = new NetworkCredential("fundadmin2", "@Pass2023Galaxy1", "pensure-nigeria");
+                staffRetirementLine.Credentials = new NetworkCredential("****", "****", "****");
                 staffRetirementLine.PreAuthenticate = true;
                 _retirementLine = staffRetirementLine.Read(retirementLine_.SurrenderDocNo,retirementLine_.LineNo );
                 _retirementLine.Actual_Spent = retirementLine_.AmountSpent;
@@ -1644,7 +1500,7 @@ namespace NAV_HR_WINDOW
 
                 
                 WorkRetirementLine_Service.RetirementLine_Service staffRetirementLine = new WorkRetirementLine_Service.RetirementLine_Service();
-                staffRetirementLine.Credentials = new NetworkCredential("fundadmin2", "@Pass2023Galaxy1", "pensure-nigeria");
+                staffRetirementLine.Credentials = new NetworkCredential("****", "****", "****");
                 staffRetirementLine.PreAuthenticate = true;
                 staffRetirementLine.Delete(_key);
 
@@ -1665,7 +1521,7 @@ namespace NAV_HR_WINDOW
             {
 
                 ProbationConfirmationLines.ConfirmationLines_Service confirmationLine_ = new ProbationConfirmationLines.ConfirmationLines_Service();
-                confirmationLine_.Credentials = new NetworkCredential("fundadmin2", "@Pass2023Galaxy1", "pensure-nigeria");
+                confirmationLine_.Credentials = new NetworkCredential("****", "****", "****");
                 confirmationLine_.PreAuthenticate = true;
                 //confirmationLine_.Update(_key);
                 //    PaymentRequestLines_Service.PaymentLine iii;
@@ -1688,7 +1544,7 @@ namespace NAV_HR_WINDOW
             {
 
                 PaymentRequestLines_Service.PaymentLine_Service paymentReqLine = new PaymentRequestLines_Service.PaymentLine_Service();
-                paymentReqLine.Credentials = new NetworkCredential("fundadmin2", "@Pass2023Galaxy1", "pensure-nigeria");
+                paymentReqLine.Credentials = new NetworkCredential("****", "****", "****");
                 paymentReqLine.PreAuthenticate = true;
                 paymentReqLine.Delete(_key);
                 //    PaymentRequestLines_Service.PaymentLine iii;
@@ -1710,7 +1566,7 @@ namespace NAV_HR_WINDOW
             try {
 
                 StoreRequisitionLine_Service.Store_Requisition_Line_Service storeReqLine = new StoreRequisitionLine_Service.Store_Requisition_Line_Service();
-                storeReqLine.Credentials = new NetworkCredential("fundadmin2", "@Pass2023Galaxy1", "pensure-nigeria");
+                storeReqLine.Credentials = new NetworkCredential("****", "****", "****");
                 storeReqLine.PreAuthenticate = true;
                 storeReqLine.Delete(_key);
 
@@ -1734,8 +1590,8 @@ namespace NAV_HR_WINDOW
 
                 StoreRequisition_Service.StoreRequisitionHeder_Service stoteReq = new StoreRequisition_Service.StoreRequisitionHeder_Service();
                 //passing the credential to access the webservice. The user must have access on Navision and also active on the domain
-                //empReleavers.Credentials = new NetworkCredential ( "coretec", "Ibukun@lag", "pensure-nigeria" );
-                stoteReq.Credentials = new NetworkCredential("fundadmin2", "@Pass2023Galaxy1", "pensure-nigeria");
+                
+                stoteReq.Credentials = new NetworkCredential("****", "****", "****");
                 stoteReq.PreAuthenticate = true;
                 List<StoreRequisition_Service.StoreRequisitionHeder_Filter> storeReqFilterArray = new List<StoreRequisition_Service.StoreRequisitionHeder_Filter>();
 
@@ -1786,8 +1642,8 @@ namespace NAV_HR_WINDOW
 
                 StoreRequisitionList_Service.StoreRequisitionList_Service stoteReq = new StoreRequisitionList_Service.StoreRequisitionList_Service();
                 //passing the credential to access the webservice. The user must have access on Navision and also active on the domain
-                //empReleavers.Credentials = new NetworkCredential ( "coretec", "Ibukun@lag", "pensure-nigeria" );
-                stoteReq.Credentials = new NetworkCredential("fundadmin2", "@Pass2023Galaxy1", "pensure-nigeria");
+                
+                stoteReq.Credentials = new NetworkCredential("****", "****", "****");
                 stoteReq.PreAuthenticate = true;
                 List<StoreRequisitionList_Service.StoreRequisitionList_Filter> storeReqFilterArray = new List<StoreRequisitionList_Service.StoreRequisitionList_Filter>();
 
@@ -1871,8 +1727,8 @@ namespace NAV_HR_WINDOW
                  
 
                 //passing the credential to access the webservice. The user must have access on Navision and also active on the domain
-                //empReleavers.Credentials = new NetworkCredential ( "coretec", "Ibukun@lag", "pensure-nigeria" );
-                empClaims.Credentials = new NetworkCredential("fundadmin2", "@Pass2023Galaxy1", "pensure-nigeria");
+                
+                empClaims.Credentials = new NetworkCredential("****", "****", "****");
                 empClaims.PreAuthenticate = true;
                 List<StaffClaim_Service.StaffClaim_Filter> empClaimFilterArray = new List<StaffClaim_Service.StaffClaim_Filter>();
                 StaffClaim_Service.StaffClaim_Filter ClaimFilter = new StaffClaim_Service.StaffClaim_Filter();
@@ -1961,8 +1817,8 @@ namespace NAV_HR_WINDOW
 
                 PaymentRequest_Service.PaymentRequest_Service paymentRequest = new PaymentRequest_Service.PaymentRequest_Service();
                 //passing the credential to access the webservice. The user must have access on Navision and also active on the domain
-                //empReleavers.Credentials = new NetworkCredential ( "coretec", "Ibukun@lag", "pensure-nigeria" );
-                paymentRequest.Credentials = new NetworkCredential("fundadmin2", "@Pass2023Galaxy1", "pensure-nigeria");
+                
+                paymentRequest.Credentials = new NetworkCredential("****", "****", "****");
                 paymentRequest.PreAuthenticate = true;
                 List<PaymentRequest_Service.PaymentRequest_Filter> paymentRequestFilterArray = new List<PaymentRequest_Service.PaymentRequest_Filter>();
                 PaymentRequest_Service.PaymentRequest_Filter paymentRequestFilter = new PaymentRequest_Service.PaymentRequest_Filter();
@@ -2034,8 +1890,8 @@ namespace NAV_HR_WINDOW
 
                 PaymentRequestList_Service.PaymentRequestList_Service paymentRequest = new PaymentRequestList_Service.PaymentRequestList_Service();
                 //passing the credential to access the webservice. The user must have access on Navision and also active on the domain
-                //empReleavers.Credentials = new NetworkCredential ( "coretec", "Ibukun@lag", "pensure-nigeria" );
-                paymentRequest.Credentials = new NetworkCredential("fundadmin2", "@Pass2023Galaxy1", "pensure-nigeria");
+                
+                paymentRequest.Credentials = new NetworkCredential("****", "****", "****");
                 paymentRequest.PreAuthenticate = true;
                 List<PaymentRequestList_Service.PaymentRequestList_Filter> paymentRequestFilterArray = new List<PaymentRequestList_Service.PaymentRequestList_Filter>();
                 PaymentRequestList_Service.PaymentRequestList_Filter paymentRequestFilter = new PaymentRequestList_Service.PaymentRequestList_Filter();
@@ -2097,7 +1953,7 @@ namespace NAV_HR_WINDOW
 
                 //passing the credential to access the webservice. The user must have access on Navision and also active on the domain
                 
-                staffAdavnce.Credentials = new NetworkCredential("fundadmin2", "@Pass2023Galaxy1", "pensure-nigeria");
+                staffAdavnce.Credentials = new NetworkCredential("****", "****", "****");
                 staffAdavnce.PreAuthenticate = true;
                 List<StaffAdvanceList_Service.StaffAdvanceRequests_Filter> staffAdvanceFilterArray = new List<StaffAdvanceList_Service.StaffAdvanceRequests_Filter>();
 
@@ -2154,7 +2010,7 @@ namespace NAV_HR_WINDOW
 
                 //passing the credential to access the webservice. The user must have access on Navision and also active on the domain
 
-                workRetirement.Credentials = new NetworkCredential("fundadmin2", "@Pass2023Galaxy1", "pensure-nigeria");
+                workRetirement.Credentials = new NetworkCredential("****", "****", "****");
                 workRetirement.PreAuthenticate = true;
                 List<WorkRetirementList_Service.WorkRetirementList_Filter> workRetirementFilterArray = new List<WorkRetirementList_Service.WorkRetirementList_Filter>();
 
@@ -2213,7 +2069,7 @@ namespace NAV_HR_WINDOW
 
                 //passing the credential to access the webservice. The user must have access on Navision and also active on the domain
 
-                workRetirement.Credentials = new NetworkCredential("fundadmin2", "@Pass2023Galaxy1", "pensure-nigeria");
+                workRetirement.Credentials = new NetworkCredential("****", "****", "****");
                 workRetirement.PreAuthenticate = true;
                 List<WorkRetirement_Service.WorkRetirement_Filter> workRetirementFilterArray = new List<WorkRetirement_Service.WorkRetirement_Filter>();
 
@@ -2273,7 +2129,7 @@ namespace NAV_HR_WINDOW
 
                 //passing the credential to access the webservice. The user must have access on Navision and also active on the domain
 
-                staffAdavnce.Credentials = new NetworkCredential("fundadmin2", "@Pass2023Galaxy1", "pensure-nigeria");
+                staffAdavnce.Credentials = new NetworkCredential("****", "****", "****");
                 staffAdavnce.PreAuthenticate = true;
                 List<StaffAdvanceRequest_Service.StaffAdvanceRequest_Filter> staffAdvanceFilterArray = new List<StaffAdvanceRequest_Service.StaffAdvanceRequest_Filter>();
 
@@ -2335,8 +2191,8 @@ namespace NAV_HR_WINDOW
 
                 PaymentRequestList_Service.PaymentRequestList_Service paymentRequest = new PaymentRequestList_Service.PaymentRequestList_Service();
                 //passing the credential to access the webservice. The user must have access on Navision and also active on the domain
-                //empReleavers.Credentials = new NetworkCredential ( "coretec", "Ibukun@lag", "pensure-nigeria" );
-                paymentRequest.Credentials = new NetworkCredential("fundadmin2", "@Pass2023Galaxy1", "pensure-nigeria");
+                
+                paymentRequest.Credentials = new NetworkCredential("****", "****", "****");
                 paymentRequest.PreAuthenticate = true;
                 List<PaymentRequestList_Service.PaymentRequestList_Filter> paymentRequestFilterArray = new List<PaymentRequestList_Service.PaymentRequestList_Filter>();
                 PaymentRequestList_Service.PaymentRequestList_Filter paymentRequestFilter = new PaymentRequestList_Service.PaymentRequestList_Filter();
@@ -2398,8 +2254,8 @@ namespace NAV_HR_WINDOW
                     
                 StaffClaimList_Service.StaffClaimList_Service empClaims = new StaffClaimList_Service.StaffClaimList_Service();
                 //passing the credential to access the webservice. The user must have access on Navision and also active on the domain
-                //empReleavers.Credentials = new NetworkCredential ( "coretec", "Ibukun@lag", "pensure-nigeria" );
-                empClaims.Credentials = new NetworkCredential("fundadmin2", "@Pass2023Galaxy1", "pensure-nigeria");
+                
+                empClaims.Credentials = new NetworkCredential("****", "****", "****");
                 empClaims.PreAuthenticate = true;
                 List<StaffClaimList_Service.StaffClaimList_Filter> empClaimsFilterArray = new List<StaffClaimList_Service.StaffClaimList_Filter>();
                 StaffClaimList_Service.StaffClaimList_Filter ClaimFilter = new StaffClaimList_Service.StaffClaimList_Filter();
@@ -2460,7 +2316,7 @@ namespace NAV_HR_WINDOW
 
                 string _status = "";
                 General_Service.pfagetbalance _General_Service = new General_Service.pfagetbalance();
-                _General_Service.Credentials = new NetworkCredential("fundadmin2", "@Pass2023Galaxy1", "pensure-nigeria");
+                _General_Service.Credentials = new NetworkCredential("****", "****", "****");
                 _status = (_General_Service.OnSendStoreReqApprovalRequest(RequisitionCode) == true) ? "Success" : "Fail";
 
                 
@@ -2491,7 +2347,7 @@ namespace NAV_HR_WINDOW
 
                 string _status = "";
                 General_Service.pfagetbalance _General_Service = new General_Service.pfagetbalance();
-                _General_Service.Credentials = new NetworkCredential("fundadmin2", "@Pass2023Galaxy1", "pensure-nigeria");
+                _General_Service.Credentials = new NetworkCredential("****", "****", "****");
                 _status = (_General_Service.SendHRCanteen(leaveCode) == true) ? "Success" : "Fail";
 
                 return _status;
@@ -2521,7 +2377,7 @@ namespace NAV_HR_WINDOW
 
                 string _status = "";
                 General_Service.pfagetbalance _General_Service = new General_Service.pfagetbalance();
-                _General_Service.Credentials = new NetworkCredential("fundadmin2", "@Pass2023Galaxy1", "pensure-nigeria");
+                _General_Service.Credentials = new NetworkCredential("****", "****", "****");
                 //_status = (_General_Service.SendCashAdvanceRequest(advanceCode) == true) ? "Success" : "Fail";
 
                
@@ -2552,7 +2408,7 @@ namespace NAV_HR_WINDOW
 
                 string _status = "";
                 General_Service.pfagetbalance _General_Service = new General_Service.pfagetbalance();
-                _General_Service.Credentials = new NetworkCredential("fundadmin2", "@Pass2023Galaxy1", "pensure-nigeria");
+                _General_Service.Credentials = new NetworkCredential("****", "****", "****");
                 _status = (_General_Service.SendCashAdvanceRetirementRequest(advanceCode) == true) ? "Success" : "Fail";
 
                 return _status;
@@ -2579,7 +2435,7 @@ namespace NAV_HR_WINDOW
 
                 string _status;
                 General_Service.pfagetbalance _General_Service = new General_Service.pfagetbalance();
-                _General_Service.Credentials = new NetworkCredential("fundadmin2", "@Pass2023Galaxy1", "pensure-nigeria");
+                _General_Service.Credentials = new NetworkCredential("****", "****", "****");
                 _status = (_General_Service.SendAppraisalGoalSettingSecond(AppraisalNo) == true) ? "Success" : "Fail";
 
                 return _status;
@@ -2601,7 +2457,7 @@ namespace NAV_HR_WINDOW
 
                 string _status;
                 General_Service.pfagetbalance _General_Service = new General_Service.pfagetbalance();
-                _General_Service.Credentials = new NetworkCredential("fundadmin2", "@Pass2023Galaxy1", "pensure-nigeria");
+                _General_Service.Credentials = new NetworkCredential("****", "****", "****");
                 _status = (_General_Service.SendAppraisalToSupervisor(AppraisalNo) == true) ? "Success" : "Fail";
 
                 return _status;
@@ -2623,7 +2479,7 @@ namespace NAV_HR_WINDOW
                
                 string _status = "";
                 General_Service.pfagetbalance _General_Service = new General_Service.pfagetbalance();
-                _General_Service.Credentials = new  NetworkCredential("fundadmin2", "@Pass2023Galaxy1", "pensure-nigeria");
+                _General_Service.Credentials = new  NetworkCredential("****", "****", "****");
                 _status = (_General_Service.SendLeaveApprovalRequest(leaveCode) == true) ? "Success"  : "Fail"  ;
 
                 //_status = (_General_Service.SendCashAdvanceRequest(leaveCode) == true) ? "Success" : "Fail";
@@ -2654,7 +2510,7 @@ namespace NAV_HR_WINDOW
 
                 string _status = "";
                 General_Service.pfagetbalance _General_Service = new General_Service.pfagetbalance();
-                _General_Service.Credentials = new NetworkCredential("fundadmin2", "@Pass2023Galaxy1", "pensure-nigeria");
+                _General_Service.Credentials = new NetworkCredential("****", "****", "****");
                 _status = (_General_Service.SendPaymentRequest(paymentCode) == true) ? "Success" : "Fail";
                 return _status;
 
@@ -2696,7 +2552,7 @@ namespace NAV_HR_WINDOW
                 
 
                 HRCanteenApplication_Service.HRCanteenApplicationCard_Service CanteenAppService = new HRCanteenApplication_Service.HRCanteenApplicationCard_Service();
-                CanteenAppService.Credentials = new NetworkCredential("fundadmin2", "@Pass2023Galaxy1", "pensure-nigeria");
+                CanteenAppService.Credentials = new NetworkCredential("****", "****", "****");
                 CanteenAppService.PreAuthenticate = true;
 
                 CanteenAppService.Create(ref CanteenApp);
@@ -2724,7 +2580,7 @@ namespace NAV_HR_WINDOW
             {
 
                 StoreRequisition_Service.StoreRequisitionHeder_Service _StoreReq = new StoreRequisition_Service.StoreRequisitionHeder_Service();
-                _StoreReq.Credentials = new NetworkCredential("fundadmin2", "@Pass2023Galaxy1", "pensure-nigeria");
+                _StoreReq.Credentials = new NetworkCredential("****", "****", "****");
                 _StoreReq.PreAuthenticate = true;
 
                 StoreRequisition_Service.StoreRequisitionHeder _storeRequisition = new StoreRequisition_Service.StoreRequisitionHeder();
@@ -2775,7 +2631,7 @@ namespace NAV_HR_WINDOW
                 _StoreReq.Update(ref _storeRequisition);
 
                 General_Service.pfagetbalance _General_Service = new General_Service.pfagetbalance();
-                _General_Service.Credentials = new NetworkCredential("fundadmin2", "@Pass2023Galaxy1", "pensure-nigeria");
+                _General_Service.Credentials = new NetworkCredential("****", "****", "****");
                _status = (_General_Service.UpdateUserIDSS(_storeRequisition.No, "STORE") == true) ? "Success" : "Fail";
 
                 return _status;
@@ -2802,7 +2658,7 @@ namespace NAV_HR_WINDOW
                 // _storeRequisition.Function_Name = storeRequisition_.FunctionName;
                 
                 StoreRequisition_Service.StoreRequisitionHeder_Service _StoreReq = new StoreRequisition_Service.StoreRequisitionHeder_Service();
-                _StoreReq.Credentials = new NetworkCredential("fundadmin2", "@Pass2023Galaxy1", "pensure-nigeria");
+                _StoreReq.Credentials = new NetworkCredential("****", "****", "****");
                 _StoreReq.PreAuthenticate = true;
                 _storeRequisition = _StoreReq.Read(storeRequisition_.DocumentNo);
 
@@ -2865,7 +2721,7 @@ namespace NAV_HR_WINDOW
             try
             {
                 StaffClaim_Service.StaffClaim_Service StaffClaimService = new StaffClaim_Service.StaffClaim_Service();
-                StaffClaimService.Credentials = new NetworkCredential("fundadmin2", "@Pass2023Galaxy1", "pensure-nigeria");
+                StaffClaimService.Credentials = new NetworkCredential("****", "****", "****");
                 StaffClaimService.PreAuthenticate = true;
 
                 StaffClaim_Service.StaffClaim _staffClaim = new StaffClaim_Service.StaffClaim();
@@ -2937,9 +2793,9 @@ namespace NAV_HR_WINDOW
                 
                 //EmployeeList.EmployeeList_Service empList = new EmployeeList.EmployeeList_Service();
                 //passing the credential to access the webservice. The user must have access on Navision and also active on the domain
-                //empList.Credentials = new NetworkCredential ( "coretec", "Ibukun@lag", "pensure-nigeria.com" );
+                
 
-                rptype.Credentials = new NetworkCredential("fundadmin2", "@Pass2023Galaxy1", "pensure-nigeria");
+                rptype.Credentials = new NetworkCredential("****", "****", "****");
                 rptype.PreAuthenticate = true;
                 List<RecieptPaymentTypesList_Service.ReceiptAndPaymentTypesList_Filter> rptypeListFilterArray = new List<RecieptPaymentTypesList_Service.ReceiptAndPaymentTypesList_Filter>();
 
@@ -2991,9 +2847,9 @@ namespace NAV_HR_WINDOW
                 
                 //EmployeeList.EmployeeList_Service empList = new EmployeeList.EmployeeList_Service();
                 //passing the credential to access the webservice. The user must have access on Navision and also active on the domain
-                //empList.Credentials = new NetworkCredential ( "coretec", "Ibukun@lag", "pensure-nigeria.com" );
+                
 
-                _itemlist.Credentials = new NetworkCredential("fundadmin2", "@Pass2023Galaxy1", "pensure-nigeria");
+                _itemlist.Credentials = new NetworkCredential("****", "****", "****");
                 _itemlist.PreAuthenticate = true;
                 List<ItemList_Service.ItemList_Filter> rptypeListFilterArray = new List<ItemList_Service.ItemList_Filter>();
                 ItemList_Service.ItemList_Filter itemListFilter = new ItemList_Service.ItemList_Filter();
@@ -3056,7 +2912,7 @@ namespace NAV_HR_WINDOW
         {
 
             ProbationConfirmationCard_Service.ConfirmationCard_Service ConfirmationProbationReq = new ProbationConfirmationCard_Service.ConfirmationCard_Service();
-            ConfirmationProbationReq.Credentials = new NetworkCredential("fundadmin2", "@Pass2023Galaxy1", "pensure-nigeria");
+            ConfirmationProbationReq.Credentials = new NetworkCredential("****", "****", "****");
             ConfirmationProbationReq.PreAuthenticate = true;
 
             ProbationConfirmationCard_Service.ConfirmationCard _ConfirmationProbation = new ProbationConfirmationCard_Service.ConfirmationCard();
@@ -3142,7 +2998,7 @@ namespace NAV_HR_WINDOW
         {
 
             ProbationConfirmationCard_Service.ConfirmationCard_Service ConfirmationProbationReq = new ProbationConfirmationCard_Service.ConfirmationCard_Service();
-            ConfirmationProbationReq.Credentials = new NetworkCredential("fundadmin2", "@Pass2023Galaxy1", "pensure-nigeria");
+            ConfirmationProbationReq.Credentials = new NetworkCredential("****", "****", "****");
             ConfirmationProbationReq.PreAuthenticate = true;
 
             try
@@ -3234,7 +3090,7 @@ namespace NAV_HR_WINDOW
         {
 
             PaymentRequest_Service.PaymentRequest_Service pmtRequest = new PaymentRequest_Service.PaymentRequest_Service();
-            pmtRequest.Credentials = new NetworkCredential("fundadmin2", "@Pass2023Galaxy1", "pensure-nigeria");
+            pmtRequest.Credentials = new NetworkCredential("****", "****", "****");
             pmtRequest.PreAuthenticate = true;
             PaymentRequest_Service.PaymentRequest _PaymentRequest = new PaymentRequest_Service.PaymentRequest();
             pmtRequest.Create(ref _PaymentRequest);
@@ -3289,7 +3145,7 @@ namespace NAV_HR_WINDOW
                 string _status = "";
              
                 General_Service.pfagetbalance _General_Service = new General_Service.pfagetbalance();
-                _General_Service.Credentials = new NetworkCredential("fundadmin2", "@Pass2023Galaxy1", "pensure-nigeria");
+                _General_Service.Credentials = new NetworkCredential("****", "****", "****");
                 _status = (_General_Service.UpdatePaymentReqCashier(_PaymentRequest.No) == true) ? "Success" : "Fail";
 
                 //_General_Service.GetItemInStore()
@@ -3311,7 +3167,7 @@ namespace NAV_HR_WINDOW
         {
 
             PaymentRequest_Service.PaymentRequest_Service pmtRequest= new PaymentRequest_Service.PaymentRequest_Service();
-            pmtRequest.Credentials = new NetworkCredential("fundadmin2", "@Pass2023Galaxy1", "pensure-nigeria");
+            pmtRequest.Credentials = new NetworkCredential("****", "****", "****");
             pmtRequest.PreAuthenticate = true;
                        
             try
@@ -3426,7 +3282,7 @@ namespace NAV_HR_WINDOW
         {
 
             StaffAdvanceRequest_Service.StaffAdvanceRequest_Service staffAdvRequest = new StaffAdvanceRequest_Service.StaffAdvanceRequest_Service();
-            staffAdvRequest.Credentials = new NetworkCredential("fundadmin2", "@Pass2023Galaxy1", "pensure-nigeria");
+            staffAdvRequest.Credentials = new NetworkCredential("****", "****", "****");
             staffAdvRequest.PreAuthenticate = true;
 
             try
@@ -3509,7 +3365,7 @@ namespace NAV_HR_WINDOW
 
 
                 General_Service.pfagetbalance _General_Service = new General_Service.pfagetbalance();
-                _General_Service.Credentials = new NetworkCredential("fundadmin2", "@Pass2023Galaxy1", "pensure-nigeria");
+                _General_Service.Credentials = new NetworkCredential("****", "****", "****");
                 _status = (_General_Service.UpdateUserIDSS(_StaffAdvanceRequest.No, "CA") == true) ? "Success" : "Fail";
                 return _status;
 
@@ -3529,7 +3385,7 @@ namespace NAV_HR_WINDOW
         {
 
             WorkRetirement_Service.WorkRetirement_Service workRetireRequest = new WorkRetirement_Service.WorkRetirement_Service();
-            workRetireRequest.Credentials = new NetworkCredential("fundadmin2", "@Pass2023Galaxy1", "pensure-nigeria");
+            workRetireRequest.Credentials = new NetworkCredential("****", "****", "****");
             workRetireRequest.PreAuthenticate = true;
 
             try
@@ -3554,7 +3410,7 @@ namespace NAV_HR_WINDOW
 
                 string _status;
                 General_Service.pfagetbalance _General_Service = new General_Service.pfagetbalance();
-                _General_Service.Credentials = new NetworkCredential("fundadmin2", "@Pass2023Galaxy1", "pensure-nigeria");
+                _General_Service.Credentials = new NetworkCredential("****", "****", "****");
                 _status = (_General_Service.UpdateUserIDSS(_StaffRetirementRequest.No, "CADRET") == true) ? "Success" : "Fail";
                 //return _status;
 
@@ -3576,7 +3432,7 @@ namespace NAV_HR_WINDOW
         {
 
             WorkRetirement_Service.WorkRetirement_Service workRetireRequest = new WorkRetirement_Service.WorkRetirement_Service();
-            workRetireRequest.Credentials = new NetworkCredential("fundadmin2", "@Pass2023Galaxy1", "pensure-nigeria");
+            workRetireRequest.Credentials = new NetworkCredential("****", "****", "****");
             workRetireRequest.PreAuthenticate = true;
 
             //StaffAdvanceRequest_Service.Account_Type.
@@ -3676,7 +3532,7 @@ namespace NAV_HR_WINDOW
         {
 
             StaffAdvanceRequest_Service.StaffAdvanceRequest_Service staffAdvRequest = new StaffAdvanceRequest_Service.StaffAdvanceRequest_Service();
-            staffAdvRequest.Credentials = new NetworkCredential("fundadmin2", "@Pass2023Galaxy1", "pensure-nigeria");
+            staffAdvRequest.Credentials = new NetworkCredential("****", "****", "****");
             staffAdvRequest.PreAuthenticate = true;
 
             //StaffAdvanceRequest_Service.Account_Type.
@@ -3789,7 +3645,7 @@ namespace NAV_HR_WINDOW
         {
 
             StaffClaim_Service.StaffClaim_Service StaffClaimService = new StaffClaim_Service.StaffClaim_Service();
-            StaffClaimService.Credentials = new NetworkCredential("fundadmin2", "@Pass2023Galaxy1", "pensure-nigeria");
+            StaffClaimService.Credentials = new NetworkCredential("****", "****", "****");
             StaffClaimService.PreAuthenticate = true;
 
 
@@ -3865,7 +3721,7 @@ namespace NAV_HR_WINDOW
             {
                 HR_AppraisalH_Service.HRAppraisalH AppraisalH = new HR_AppraisalH_Service.HRAppraisalH();
                 HR_AppraisalH_Service.HRAppraisalH_Service hRAppraisalH = new HR_AppraisalH_Service.HRAppraisalH_Service();
-                hRAppraisalH.Credentials = new NetworkCredential("fundadmin2", "@Pass2023Galaxy1", "pensure-nigeria");
+                hRAppraisalH.Credentials = new NetworkCredential("****", "****", "****");
                 hRAppraisalH.PreAuthenticate = true;
                 hRAppraisalH.Create(ref AppraisalH);
                 AppraisalReq.Appraisal_Date = AppraisalH.Appraisal_Date;
@@ -3901,7 +3757,7 @@ namespace NAV_HR_WINDOW
 
                 HR_AppraisalH_Service.HRAppraisalH AppraisalH = new HR_AppraisalH_Service.HRAppraisalH();
                 HR_AppraisalH_Service.HRAppraisalH_Service hRAppraisalH = new HR_AppraisalH_Service.HRAppraisalH_Service();
-                hRAppraisalH.Credentials = new NetworkCredential("fundadmin2", "@Pass2023Galaxy1", "pensure-nigeria");
+                hRAppraisalH.Credentials = new NetworkCredential("****", "****", "****");
                 hRAppraisalH.PreAuthenticate = true;
                 hRAppraisalH.Create(ref AppraisalH);
                 AppraisalReq.Appraisal_No = AppraisalH.Appraisal_No;
@@ -3914,7 +3770,7 @@ namespace NAV_HR_WINDOW
 
                 //HR_AppraisalH_Service.HRAppraisalH AppraisalH = new HR_AppraisalH_Service.HRAppraisalH();
                 //HR_AppraisalH_Service.HRAppraisalH_Service hRAppraisalH = new HR_AppraisalH_Service.HRAppraisalH_Service();
-                //hRAppraisalH.Credentials = new NetworkCredential("fundadmin2", "@Pass2023Galaxy1", "pensure-nigeria");
+                //hRAppraisalH.Credentials = new NetworkCredential("****", "****", "****");
                 //hRAppraisalH.PreAuthenticate = true;
                 //hRAppraisalH.Create(ref AppraisalH);
                 //AppraisalReq.Appraisal_Date = AppraisalH.Appraisal_Date;
@@ -3932,7 +3788,7 @@ namespace NAV_HR_WINDOW
 
                 string _status;
                 General_Service.pfagetbalance _General_Service = new General_Service.pfagetbalance();
-                _General_Service.Credentials = new NetworkCredential("fundadmin2", "@Pass2023Galaxy1", "pensure-nigeria");
+                _General_Service.Credentials = new NetworkCredential("****", "****", "****");
                 _status = (_General_Service.UpdateUserIDSS(AppraisalH.Appraisal_No, "APPRAISAL") == true) ? "Success" : "Fail";
 
                 //return _status;
@@ -3959,7 +3815,7 @@ namespace NAV_HR_WINDOW
             {
                 HR_AppraisalH_Service.HRAppraisalH AppraisalH = new HR_AppraisalH_Service.HRAppraisalH();
                 HR_AppraisalH_Service.HRAppraisalH_Service hRAppraisalH = new HR_AppraisalH_Service.HRAppraisalH_Service();
-                hRAppraisalH.Credentials = new NetworkCredential("fundadmin2", "@Pass2023Galaxy1", "pensure-nigeria");
+                hRAppraisalH.Credentials = new NetworkCredential("****", "****", "****");
                 hRAppraisalH.PreAuthenticate = true;
 
                 AppraisalH.Appraisal_No = _appraisalRequest.Appraisal_No;
@@ -3988,7 +3844,7 @@ namespace NAV_HR_WINDOW
             {
                 HR_AppraisalH_Service.HRAppraisalH AppraisalH = new HR_AppraisalH_Service.HRAppraisalH();
                 HR_AppraisalH_Service.HRAppraisalH_Service hRAppraisalH = new HR_AppraisalH_Service.HRAppraisalH_Service();
-                hRAppraisalH.Credentials = new NetworkCredential("fundadmin2", "@Pass2023Galaxy1", "pensure-nigeria");
+                hRAppraisalH.Credentials = new NetworkCredential("****", "****", "****");
                 hRAppraisalH.PreAuthenticate = true;
 
                 List<HR_AppraisalH_Service.HRAppraisalH_Filter> StaffAppraisalFilterArray = new List<HR_AppraisalH_Service.HRAppraisalH_Filter>();
@@ -4073,7 +3929,7 @@ namespace NAV_HR_WINDOW
                 
                 HRAppraisalCareerDev.HRAppraisalCareerDevQues_Service _careerdev = new HRAppraisalCareerDev.HRAppraisalCareerDevQues_Service();
 
-                _careerdev.Credentials = new NetworkCredential("fundadmin2", "@Pass2023Galaxy1", "pensure-nigeria");
+                _careerdev.Credentials = new NetworkCredential("****", "****", "****");
                 _careerdev.PreAuthenticate = true;
                 List<HRAppraisalCareerDev.HRAppraisalCareerDevQues_Filter> _careerdevFilterArray = new List<HRAppraisalCareerDev.HRAppraisalCareerDevQues_Filter>();
 
@@ -4124,7 +3980,7 @@ namespace NAV_HR_WINDOW
 
                 HRAppraisalCareerDev.HRAppraisalCareerDevQues_Service _careerdev = new HRAppraisalCareerDev.HRAppraisalCareerDevQues_Service();
 
-                _careerdev.Credentials = new NetworkCredential("fundadmin2", "@Pass2023Galaxy1", "pensure-nigeria");
+                _careerdev.Credentials = new NetworkCredential("****", "****", "****");
                 _careerdev.PreAuthenticate = true;
 
                 if (careerDevelopment.AppraisalNo != "" && careerDevelopment.Answer != "")
@@ -4174,7 +4030,7 @@ namespace NAV_HR_WINDOW
 
                 HRAppraisalKPIFinance.HRAppraisalKPIB_Service _financial = new HRAppraisalKPIFinance.HRAppraisalKPIB_Service();
 
-                _financial.Credentials = new NetworkCredential("fundadmin2", "@Pass2023Galaxy1", "pensure-nigeria");
+                _financial.Credentials = new NetworkCredential("****", "****", "****");
                 _financial.PreAuthenticate = true;
                 List<HRAppraisalKPIFinance.HRAppraisalKPIB_Filter> _financialFilterArray = new List<HRAppraisalKPIFinance.HRAppraisalKPIB_Filter>();
 
@@ -4239,7 +4095,7 @@ namespace NAV_HR_WINDOW
 
                 HRAppraisalKPIFinance.HRAppraisalKPIB_Service _financial = new HRAppraisalKPIFinance.HRAppraisalKPIB_Service();
 
-                _financial.Credentials = new NetworkCredential("fundadmin2", "@Pass2023Galaxy1", "pensure-nigeria");
+                _financial.Credentials = new NetworkCredential("****", "****", "****");
                 _financial.PreAuthenticate = true;
 
                 if (kpiFinancial.Key == "")
@@ -4375,7 +4231,7 @@ namespace NAV_HR_WINDOW
 
                 HRAppraisalKPICustomer.HRAppraisalKPIC_Service _customer = new HRAppraisalKPICustomer.HRAppraisalKPIC_Service();
 
-                _customer.Credentials = new NetworkCredential("fundadmin2", "@Pass2023Galaxy1", "pensure-nigeria");
+                _customer.Credentials = new NetworkCredential("****", "****", "****");
                 _customer.PreAuthenticate = true;
                 List<HRAppraisalKPICustomer.HRAppraisalKPIC_Filter> _customerFilterArray = new List<HRAppraisalKPICustomer.HRAppraisalKPIC_Filter>();
 
@@ -4435,7 +4291,7 @@ namespace NAV_HR_WINDOW
 
                 HRAppraisalKPICustomer.HRAppraisalKPIC_Service _customer = new HRAppraisalKPICustomer.HRAppraisalKPIC_Service();
 
-                _customer.Credentials = new NetworkCredential("fundadmin2", "@Pass2023Galaxy1", "pensure-nigeria");
+                _customer.Credentials = new NetworkCredential("****", "****", "****");
                 _customer.PreAuthenticate = true;
                 if (kpiCustomer.Key == "")
                 {
@@ -4569,7 +4425,7 @@ namespace NAV_HR_WINDOW
 
                 HRAppraisalKPIInternal.HRAppraisalKPID_Service _internal = new HRAppraisalKPIInternal.HRAppraisalKPID_Service();
 
-                _internal.Credentials = new NetworkCredential("fundadmin2", "@Pass2023Galaxy1", "pensure-nigeria");
+                _internal.Credentials = new NetworkCredential("****", "****", "****");
                 _internal.PreAuthenticate = true;
                 List<HRAppraisalKPIInternal.HRAppraisalKPID_Filter> _internalFilterArray = new List<HRAppraisalKPIInternal.HRAppraisalKPID_Filter>();
 
@@ -4629,7 +4485,7 @@ namespace NAV_HR_WINDOW
 
                 HRAppraisalKPIInternal.HRAppraisalKPID_Service _internal = new HRAppraisalKPIInternal.HRAppraisalKPID_Service();
 
-                _internal.Credentials = new NetworkCredential("fundadmin2", "@Pass2023Galaxy1", "pensure-nigeria");
+                _internal.Credentials = new NetworkCredential("****", "****", "****");
                 _internal.PreAuthenticate = true;
                 if (kpiInternal.Key == "")
                 {
@@ -4761,7 +4617,7 @@ namespace NAV_HR_WINDOW
 
                 HRAppraisalKPILearning.HRAppraisalKPIE_Service _learning = new HRAppraisalKPILearning.HRAppraisalKPIE_Service();
 
-                _learning.Credentials = new NetworkCredential("fundadmin2", "@Pass2023Galaxy1", "pensure-nigeria");
+                _learning.Credentials = new NetworkCredential("****", "****", "****");
                 _learning.PreAuthenticate = true;
                 List<HRAppraisalKPILearning.HRAppraisalKPIE_Filter> _learningFilterArray = new List<HRAppraisalKPILearning.HRAppraisalKPIE_Filter>();
 
@@ -4821,7 +4677,7 @@ namespace NAV_HR_WINDOW
 
                 HRAppraisalKPILearning.HRAppraisalKPIE_Service _learning = new HRAppraisalKPILearning.HRAppraisalKPIE_Service();
 
-                _learning.Credentials = new NetworkCredential("fundadmin2", "@Pass2023Galaxy1", "pensure-nigeria");
+                _learning.Credentials = new NetworkCredential("****", "****", "****");
                 _learning.PreAuthenticate = true;
                 if (kpiLearning.Key == "")
                 {
@@ -4949,7 +4805,7 @@ namespace NAV_HR_WINDOW
             {
 
                 HR_AppraisalBehavour_Service.HRAppraisalBehavoirA_Service HRBehavoural = new HR_AppraisalBehavour_Service.HRAppraisalBehavoirA_Service();
-                HRBehavoural.Credentials = new NetworkCredential("fundadmin2", "@Pass2023Galaxy1", "pensure-nigeria");
+                HRBehavoural.Credentials = new NetworkCredential("****", "****", "****");
                 HRBehavoural.PreAuthenticate = true;
 
                 List<HR_AppraisalBehavour_Service.HRAppraisalBehavoirA_Filter> BehavouralFilterArray = new List<HR_AppraisalBehavour_Service.HRAppraisalBehavoirA_Filter>();
@@ -5011,7 +4867,7 @@ namespace NAV_HR_WINDOW
 
                 HR_AppraisalSelfEvaluation_Service.HRAppraisalSelfEvaluation_Service HRSelfEvalList = new HR_AppraisalSelfEvaluation_Service.HRAppraisalSelfEvaluation_Service();
 
-                HRSelfEvalList.Credentials = new NetworkCredential("fundadmin2", "@Pass2023Galaxy1", "pensure-nigeria");
+                HRSelfEvalList.Credentials = new NetworkCredential("****", "****", "****");
                 HRSelfEvalList.PreAuthenticate = true;
 
                 List<HR_AppraisalSelfEvaluation_Service.HRAppraisalSelfEvaluation_Filter> SelfEvaluationFilterArray = new List<HR_AppraisalSelfEvaluation_Service.HRAppraisalSelfEvaluation_Filter>();
@@ -5064,7 +4920,7 @@ namespace NAV_HR_WINDOW
             {
                 
                 HR_AppraisalSelfEvaluationList_Service.SelfEvaluation_Service HRSelfEvalList = new HR_AppraisalSelfEvaluationList_Service.SelfEvaluation_Service();
-                HRSelfEvalList.Credentials = new NetworkCredential("fundadmin2", "@Pass2023Galaxy1", "pensure-nigeria");
+                HRSelfEvalList.Credentials = new NetworkCredential("****", "****", "****");
                 HRSelfEvalList.PreAuthenticate = true;
 
                 List<HR_AppraisalSelfEvaluationList_Service.SelfEvaluation_Filter> SelfEvaluationFilterArray = new List<HR_AppraisalSelfEvaluationList_Service.SelfEvaluation_Filter>();
@@ -5123,7 +4979,7 @@ namespace NAV_HR_WINDOW
                 HR_AppraisalBehavour_Service.HRAppraisalBehavoirA appraisalBehavoural = new HR_AppraisalBehavour_Service.HRAppraisalBehavoirA();
 
                 HR_AppraisalBehavour_Service.HRAppraisalBehavoirA_Service HRappraisalBehavoural = new HR_AppraisalBehavour_Service.HRAppraisalBehavoirA_Service();
-                HRappraisalBehavoural.Credentials = new NetworkCredential("fundadmin2", "@Pass2023Galaxy1", "pensure-nigeria");
+                HRappraisalBehavoural.Credentials = new NetworkCredential("****", "****", "****");
                 HRappraisalBehavoural.PreAuthenticate = true;
 
                 //List<HR_AppraisalSelfEvaluation_Service.HRAppraisalSelfEvaluation_Filter> SelfEvaluationFilterArray = new List<HR_AppraisalSelfEvaluation_Service.HRAppraisalSelfEvaluation_Filter>();
@@ -5190,7 +5046,7 @@ namespace NAV_HR_WINDOW
                 HR_AppraisalSelfEvaluation_Service.HRAppraisalSelfEvaluation selfEvaluation = new HR_AppraisalSelfEvaluation_Service.HRAppraisalSelfEvaluation();
 
                 HR_AppraisalSelfEvaluation_Service.HRAppraisalSelfEvaluation_Service HRSelfEvaluation = new HR_AppraisalSelfEvaluation_Service.HRAppraisalSelfEvaluation_Service();
-                HRSelfEvaluation.Credentials = new NetworkCredential("fundadmin2", "@Pass2023Galaxy1", "pensure-nigeria");
+                HRSelfEvaluation.Credentials = new NetworkCredential("****", "****", "****");
                 HRSelfEvaluation.PreAuthenticate = true;
 
                 List<HR_AppraisalSelfEvaluation_Service.HRAppraisalSelfEvaluation_Filter> SelfEvaluationFilterArray = new List<HR_AppraisalSelfEvaluation_Service.HRAppraisalSelfEvaluation_Filter>();
@@ -5253,7 +5109,7 @@ namespace NAV_HR_WINDOW
                 HR_AppraisalSelfEvaluation_Service.HRAppraisalSelfEvaluation selfEvaluation = new HR_AppraisalSelfEvaluation_Service.HRAppraisalSelfEvaluation();
 
                 HR_AppraisalSelfEvaluation_Service.HRAppraisalSelfEvaluation_Service HRSelfEvaluation = new HR_AppraisalSelfEvaluation_Service.HRAppraisalSelfEvaluation_Service();
-                HRSelfEvaluation.Credentials = new NetworkCredential("fundadmin2", "@Pass2023Galaxy1", "pensure-nigeria");
+                HRSelfEvaluation.Credentials = new NetworkCredential("****", "****", "****");
                 HRSelfEvaluation.PreAuthenticate = true;
 
                 List<HR_AppraisalSelfEvaluation_Service.HRAppraisalSelfEvaluation_Filter> SelfEvaluationFilterArray = new List<HR_AppraisalSelfEvaluation_Service.HRAppraisalSelfEvaluation_Filter>();
@@ -5313,7 +5169,7 @@ namespace NAV_HR_WINDOW
                 HR_AppraisalSelfEvaluation_Service.HRAppraisalSelfEvaluation selfEvaluation = new HR_AppraisalSelfEvaluation_Service.HRAppraisalSelfEvaluation();
 
                 HR_AppraisalSelfEvaluation_Service.HRAppraisalSelfEvaluation_Service HRSelfEvaluation = new HR_AppraisalSelfEvaluation_Service.HRAppraisalSelfEvaluation_Service();
-                HRSelfEvaluation.Credentials = new NetworkCredential("fundadmin2", "@Pass2023Galaxy1", "pensure-nigeria");
+                HRSelfEvaluation.Credentials = new NetworkCredential("****", "****", "****");
                 HRSelfEvaluation.PreAuthenticate = true;
 
                 selfEvaluation.Code = _selfEvaluation.Appraisal_No;
@@ -5344,7 +5200,7 @@ namespace NAV_HR_WINDOW
                 HR_AppraisalSelfEvaluation_Service.HRAppraisalSelfEvaluation selfEvaluation = new HR_AppraisalSelfEvaluation_Service.HRAppraisalSelfEvaluation();
 
                 HR_AppraisalSelfEvaluation_Service.HRAppraisalSelfEvaluation_Service HRSelfEvaluation = new HR_AppraisalSelfEvaluation_Service.HRAppraisalSelfEvaluation_Service();
-                HRSelfEvaluation.Credentials = new NetworkCredential("fundadmin2", "@Pass2023Galaxy1", "pensure-nigeria");
+                HRSelfEvaluation.Credentials = new NetworkCredential("****", "****", "****");
                 HRSelfEvaluation.PreAuthenticate = true;
 
                 List<HR_AppraisalSelfEvaluation_Service.HRAppraisalSelfEvaluation_Filter> SelfEvaluationFilterArray = new List<HR_AppraisalSelfEvaluation_Service.HRAppraisalSelfEvaluation_Filter>();
@@ -5453,8 +5309,8 @@ namespace NAV_HR_WINDOW
                 LeaveApp.Employee_ID = LvApp.Employee_No; 
                 LeaveCard_Service.LeaveApplication_Service lvAppService = new LeaveCard_Service.LeaveApplication_Service ( );
 
-			    //lvAppService.Credentials = new NetworkCredential ( LvApp.UserName , LvApp.Password , "pensure-nigeria" );
-                lvAppService.Credentials = new NetworkCredential("fundadmin2", "@Pass2023Galaxy1", "pensure-nigeria");
+			    //lvAppService.Credentials = new NetworkCredential ( LvApp.UserName , LvApp.Password , "****" );
+                lvAppService.Credentials = new NetworkCredential("****", "****", "****");
                 lvAppService.PreAuthenticate = true;
 			    lvAppService.Create ( ref  LeaveApp );
 
@@ -5471,7 +5327,7 @@ namespace NAV_HR_WINDOW
 
                 string _status;
                 General_Service.pfagetbalance _General_Service = new General_Service.pfagetbalance();
-                _General_Service.Credentials = new NetworkCredential("fundadmin2", "@Pass2023Galaxy1", "pensure-nigeria");
+                _General_Service.Credentials = new NetworkCredential("****", "****", "****");
                 _status = (_General_Service.UpdateLeaveApp(LeaveApp.Application_Code) == true) ? "Success" : "Fail";
                 
                 return _status;
@@ -5498,7 +5354,7 @@ namespace NAV_HR_WINDOW
 
 
                 LeaveCard_Service.LeaveApplication_Service lvAppService = new LeaveCard_Service.LeaveApplication_Service ( );
-                lvAppService.Credentials = new NetworkCredential("fundadmin2", "@Pass2023Galaxy1", "pensure-nigeria");
+                lvAppService.Credentials = new NetworkCredential("****", "****", "****");
                 lvAppService.PreAuthenticate = true;
 
 			    List<LeaveCard_Service.LeaveApplication_Filter> LeaveCardFilterArray = new List<LeaveCard_Service.LeaveApplication_Filter> ( );
