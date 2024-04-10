@@ -1,0 +1,171 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="NAV_HR_WINDOW.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="NAV_HR_WINDOW_ReLeavers_Releavers_Service" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://nav_test.pensure-nigeria.com:1147/PENSURETESTFUND/WS/PENSURE%20SHAREHOLDERS%20FUNDS/Page/Releavers</Value>
+    </Setting>
+    <Setting Name="NAV_HR_WINDOW_RCenter_ResponsibilityCenter_Service" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://nav_test.pensure-nigeria.com:1147/PENSURETESTFUND/WS/PENSURE%20SHAREHOLDERS%20FUNDS/Page/ResponsibilityCenter</Value>
+    </Setting>
+    <Setting Name="NAV_HR_WINDOW_NoSeries_NoSerialIntegration_Service" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://nav_test.pensure-nigeria.com:1147/PENSURETESTFUND/WS/PENSURE%20SHAREHOLDERS%20FUNDS/Page/NoSerialIntegration</Value>
+    </Setting>
+    <Setting Name="NAV_HR_WINDOW_LeaveAcknowledgment_LeaveAcknowledgmentCard_Service" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://nav_test.pensure-nigeria.com:1147/PENSURETESTFUND/WS/PENSURE%20SHAREHOLDERS%20FUNDS/Page/LeaveAcknowledgment</Value>
+    </Setting>
+    <Setting Name="NAV_HR_WINDOW_LeaveAcknowledgmentList_LeaveAcknowledgmentList_Service" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://nav_test.pensure-nigeria.com:1147/PENSURETESTFUND/WS/PENSURE%20SHAREHOLDERS%20FUNDS/Page/LeaveAcknowledgmentList</Value>
+    </Setting>
+    <Setting Name="NAV_HR_WINDOW_ApprovalEntry_ApprovalEntry_Service" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://nav_test.pensure-nigeria.com:1147/PENSURETESTFUND/WS/PENSURE%20SHAREHOLDERS%20FUNDS/Page/ApprovalEntry</Value>
+    </Setting>
+    <Setting Name="NAV_HR_WINDOW_AccountChart_AccChart_Service" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://nav_test.pensure-nigeria.com:1147/PENSURETESTFUND/WS/PENSURE%20SHAREHOLDERS%20FUNDS/Page/AccChart</Value>
+    </Setting>
+    <Setting Name="NAV_HR_WINDOW_NoSeries_Service_NoSerialIntegration_Service" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://nav_app_rep.pensure-nigeria.com:9047/BC140/WS/PENSURE%20SHAREHOLDERS%20FUNDS/Page/NoSerialIntegration</Value>
+    </Setting>
+    <Setting Name="NAV_HR_WINDOW_ItemLedgerEntries_Service_ItemLedgerEntries_Service" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://nav_app_rep.pensure-nigeria.com:9047/BC140/WS/PENSURE%20SHAREHOLDERS%20FUNDS/Page/ItemLedgerEntries</Value>
+    </Setting>
+    <Setting Name="NAV_HR_WINDOW_ProbationConfirmationList_Service_ProbationConfirmationList_Service" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://nav_app_rep.pensure-nigeria.com:9047/BC140/WS/PENSURE%20SHAREHOLDERS%20FUNDS/Page/ProbationConfirmationList</Value>
+    </Setting>
+    <Setting Name="NAV_HR_WINDOW_ProbationConfirmationCard_Service_ConfirmationCard_Service" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://nav_app_rep.pensure-nigeria.com:9047/BC140/WS/PENSURE%20SHAREHOLDERS%20FUNDS/Page/ConfirmationCard</Value>
+    </Setting>
+    <Setting Name="NAV_HR_WINDOW_ProbationConfirmationLines_ConfirmationLines_Service" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://nav_app_rep.pensure-nigeria.com:9047/BC140/WS/PENSURE%20SHAREHOLDERS%20FUNDS/Page/ConfirmationLines</Value>
+    </Setting>
+    <Setting Name="NAV_HR_WINDOW_HR_AppraisalH_Service_HRAppraisalH_Service" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://nav_app.pensure-nigeria.com:14047/LPPFABC/WS/PENSURE%20SHAREHOLDERS%20FUNDS/Page/HRAppraisalH</Value>
+    </Setting>
+    <Setting Name="NAV_HR_WINDOW_HR_AppraisalSelfEvaluationList_Service_SelfEvaluation_Service" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://nav_app.pensure-nigeria.com:14047/LPPFABC/WS/PENSURE%20SHAREHOLDERS%20FUNDS/Page/SelfEvaluation</Value>
+    </Setting>
+    <Setting Name="NAV_HR_WINDOW_HR_AppraisalSelfEvaluation_Service_HRAppraisalSelfEvaluation_Service" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://nav_app.pensure-nigeria.com:14047/LPPFABC/WS/PENSURE%20SHAREHOLDERS%20FUNDS/Page/HRAppraisalSelfEvaluation</Value>
+    </Setting>
+    <Setting Name="NAV_HR_WINDOW_HR_AppraisalBehavour_Service_HRAppraisalBehavoirA_Service" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://nav_app.pensure-nigeria.com:14047/LPPFABC/WS/PENSURE%20SHAREHOLDERS%20FUNDS/Page/HRAppraisalBehavoirA</Value>
+    </Setting>
+    <Setting Name="NAV_HR_WINDOW_LocationList_Service_LocationList_Service" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://nav_app.pensure-nigeria.com:14047/LPPFABC/WS/PENSURE%20SHAREHOLDERS%20FUNDS/Page/LocationList</Value>
+    </Setting>
+    <Setting Name="NAV_HR_WINDOW_HRSetup_Service_HRSetup_Service" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://nav_app_rep.pensure-nigeria.com:9047/BC140/WS/PENSURE%20SHAREHOLDERS%20FUNDS/Page/HRSetup</Value>
+    </Setting>
+    <Setting Name="NAV_HR_WINDOW_EmployeeList_Service_EmployeeList_Service" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://nav_app_rep.pensure-nigeria.com:9047/BC140/WS/PENSURE%20SHAREHOLDERS%20FUNDS/Page/EmployeeList</Value>
+    </Setting>
+    <Setting Name="NAV_HR_WINDOW_ReLeavers_Service_Releavers_Service" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://nav_app_rep.pensure-nigeria.com:9047/BC140/WS/PENSURE%20SHAREHOLDERS%20FUNDS/Page/Releavers</Value>
+    </Setting>
+    <Setting Name="NAV_HR_WINDOW_RCenter_Service_ResponsibilityCenter_Service" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://nav_app.pensure-nigeria.com:14047/LPPFABC/WS/PENSURE%20SHAREHOLDERS%20FUNDS/Page/ResponsibilityCenter</Value>
+    </Setting>
+    <Setting Name="NAV_HR_WINDOW_LeaveTypes_Service_LeaveTypes_Service" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://nav_app_rep.pensure-nigeria.com:9047/BC140/WS/PENSURE%20SHAREHOLDERS%20FUNDS/Page/LeaveTypes</Value>
+    </Setting>
+    <Setting Name="NAV_HR_WINDOW_LeaveCard_Service_LeaveApplication_Service" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://nav_app_rep.pensure-nigeria.com:9047/BC140/WS/PENSURE%20SHAREHOLDERS%20FUNDS/Page/LeaveApplication</Value>
+    </Setting>
+    <Setting Name="NAV_HR_WINDOW_LeaveApplicationList_Service_LeaveApplicationAll_Service" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://nav_app_rep.pensure-nigeria.com:9047/BC140/WS/PENSURE%20SHAREHOLDERS%20FUNDS/Page/LeaveApplicationAll</Value>
+    </Setting>
+    <Setting Name="NAV_HR_WINDOW_EmployeeCard_Service_HREmployeeCard_Service" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://nav_app.pensure-nigeria.com:14047/LPPFABC/WS/PENSURE%20SHAREHOLDERS%20FUNDS/Page/HREmployeeCard</Value>
+    </Setting>
+    <Setting Name="NAV_HR_WINDOW_ApprovalEntries_ApprovalEntries_Service" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://nav_app_rep.pensure-nigeria.com:9047/BC140/WS/PENSURE%20SHAREHOLDERS%20FUNDS/Page/SHFApprovalEntries</Value>
+    </Setting>
+    <Setting Name="NAV_HR_WINDOW_General_Service_pfagetbalance" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://nav_app.pensure-nigeria.com:14047/LPPFABC/WS/PENSURE%20SHAREHOLDERS%20FUNDS/Codeunit/pfagetbalance</Value>
+    </Setting>
+    <Setting Name="NAV_HR_WINDOW_HRCanteenApplicationList_Service_HRCanteenApplicationList_Service" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://nav_app_rep.pensure-nigeria.com:9047/BC140/WS/PENSURE%20SHAREHOLDERS%20FUNDS/Page/HRCanteenApplicationList</Value>
+    </Setting>
+    <Setting Name="NAV_HR_WINDOW_HRCanteenApplication_Service_HRCanteenApplicationCard_Service" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://nav_app_rep.pensure-nigeria.com:9047/BC140/WS/PENSURE%20SHAREHOLDERS%20FUNDS/Page/HRCanteenApplicationCard</Value>
+    </Setting>
+    <Setting Name="NAV_HR_WINDOW_StaffClaimList_Service_StaffClaimList_Service" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://nav_app.pensure-nigeria.com:14047/LPPFABC/WS/PENSURE%20SHAREHOLDERS%20FUNDS/Page/StaffClaimList</Value>
+    </Setting>
+    <Setting Name="NAV_HR_WINDOW_StaffClaim_Service_StaffClaim_Service" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://nav_app.pensure-nigeria.com:14047/LPPFABC/WS/PENSURE%20SHAREHOLDERS%20FUNDS/Page/StaffClaim</Value>
+    </Setting>
+    <Setting Name="NAV_HR_WINDOW_RecieptPaymentTypesList_Service_ReceiptAndPaymentTypesList_Service" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://nav_app.pensure-nigeria.com:14047/LPPFABC/WS/PENSURE%20SHAREHOLDERS%20FUNDS/Page/ReceiptAndPaymentTypesList</Value>
+    </Setting>
+    <Setting Name="NAV_HR_WINDOW_StoreRequisition_Service_StoreRequisitionHeder_Service" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://nav_app_rep.pensure-nigeria.com:9047/BC140/WS/PENSURE%20SHAREHOLDERS%20FUNDS/Page/StoreRequisitionHeder</Value>
+    </Setting>
+    <Setting Name="NAV_HR_WINDOW_StoreRequisitionList_Service_StoreRequisitionList_Service" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://nav_app.pensure-nigeria.com:14047/LPPFABC/WS/PENSURE%20SHAREHOLDERS%20FUNDS/Page/StoreRequisitionList</Value>
+    </Setting>
+    <Setting Name="NAV_HR_WINDOW_ItemList_Service_ItemList_Service" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://nav_app.pensure-nigeria.com:14047/LPPFABC/WS/PENSURE%20SHAREHOLDERS%20FUNDS/Page/ItemList</Value>
+    </Setting>
+    <Setting Name="NAV_HR_WINDOW_PaymentRequest_Service_PaymentRequest_Service" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://nav_app.pensure-nigeria.com:14047/LPPFABC/WS/PENSURE%20SHAREHOLDERS%20FUNDS/Page/PaymentRequest</Value>
+    </Setting>
+    <Setting Name="NAV_HR_WINDOW_PaymentRequestList_Service_PaymentRequestList_Service" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://nav_app.pensure-nigeria.com:14047/LPPFABC/WS/PENSURE%20SHAREHOLDERS%20FUNDS/Page/PaymentRequestList</Value>
+    </Setting>
+    <Setting Name="NAV_HR_WINDOW_StoreRequisitionLine_Service_Store_Requisition_Line_Service" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://nav_app.pensure-nigeria.com:14047/LPPFABC/WS/PENSURE%20SHAREHOLDERS%20FUNDS/Page/Store_Requisition_Line</Value>
+    </Setting>
+    <Setting Name="NAV_HR_WINDOW_PaymentRequestLines_Service_PaymentLine_Service" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://nav_app.pensure-nigeria.com:14047/LPPFABC/WS/PENSURE%20SHAREHOLDERS%20FUNDS/Page/PaymentLine</Value>
+    </Setting>
+    <Setting Name="NAV_HR_WINDOW_StaffClaimLine_Service_StaffClaimLine_Service" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://nav_app.pensure-nigeria.com:14047/LPPFABC/WS/PENSURE%20SHAREHOLDERS%20FUNDS/Page/StaffClaimLine</Value>
+    </Setting>
+    <Setting Name="NAV_HR_WINDOW_PaymentVoucherList_Service_PaymentVoucherList_Service" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://nav_app.pensure-nigeria.com:14047/LPPFABC/WS/PENSURE%20SHAREHOLDERS%20FUNDS/Page/PaymentVoucherList</Value>
+    </Setting>
+    <Setting Name="NAV_HR_WINDOW_StaffAdvanceRequest_Service_StaffAdvanceRequest_Service" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://nav_app.pensure-nigeria.com:14047/LPPFABC/WS/PENSURE%20SHAREHOLDERS%20FUNDS/Page/StaffAdvanceRequest</Value>
+    </Setting>
+    <Setting Name="NAV_HR_WINDOW_StaffAdvanceLines_Service_StaffAdvanceLines_Service" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://nav_app.pensure-nigeria.com:14047/LPPFABC/WS/PENSURE%20SHAREHOLDERS%20FUNDS/Page/StaffAdvanceLines</Value>
+    </Setting>
+    <Setting Name="NAV_HR_WINDOW_StaffAdvanceList_Service_StaffAdvanceRequests_Service" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://nav_app.pensure-nigeria.com:14047/LPPFABC/WS/PENSURE%20SHAREHOLDERS%20FUNDS/Page/StaffAdvanceRequests</Value>
+    </Setting>
+    <Setting Name="NAV_HR_WINDOW_WorkRetirementList_Service_WorkRetirementList_Service" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://nav_app.pensure-nigeria.com:14047/LPPFABC/WS/PENSURE%20SHAREHOLDERS%20FUNDS/Page/WorkRetirementList</Value>
+    </Setting>
+    <Setting Name="NAV_HR_WINDOW_WorkRetirement_Service_WorkRetirement_Service" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://nav_app.pensure-nigeria.com:14047/LPPFABC/WS/PENSURE%20SHAREHOLDERS%20FUNDS/Page/WorkRetirement</Value>
+    </Setting>
+    <Setting Name="NAV_HR_WINDOW_WorkRetirementLine_Service_RetirementLine_Service" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://nav_app_rep.pensure-nigeria.com:9047/BC140/WS/PENSURE%20SHAREHOLDERS%20FUNDS/Page/RetirementLine</Value>
+    </Setting>
+    <Setting Name="NAV_HR_WINDOW_LocationCodes_Service_LocationCodes_Service" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://nav_app.pensure-nigeria.com:14047/LPPFABC/WS/PENSURE%20SHAREHOLDERS%20FUNDS/Page/LocationCodes</Value>
+    </Setting>
+    <Setting Name="NAV_HR_WINDOW_SHFApprovalEntries_SHFApprovalEntries_Service" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://nav_app_rep.pensure-nigeria.com:9047/BC140/WS/PENSURE%20SHAREHOLDERS%20FUNDS/Page/SHFApprovalEntries</Value>
+    </Setting>
+    <Setting Name="NAV_HR_WINDOW_HREmployeeList_HREmployeeListNew_Service" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://nav_app.pensure-nigeria.com:14047/LPPFABC/WS/PENSURE%20SHAREHOLDERS%20FUNDS/Page/HREmployeeListNew</Value>
+    </Setting>
+    <Setting Name="NAV_HR_WINDOW_HRAppraisalKPIFinance_HRAppraisalKPIB_Service" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://nav_app.pensure-nigeria.com:14047/LPPFABC/WS/PENSURE%20SHAREHOLDERS%20FUNDS/Page/HRAppraisalKPIB</Value>
+    </Setting>
+    <Setting Name="NAV_HR_WINDOW_HRAppraisalKPICustomer_HRAppraisalKPIC_Service" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://nav_app.pensure-nigeria.com:14047/LPPFABC/WS/PENSURE%20SHAREHOLDERS%20FUNDS/Page/HRAppraisalKPIC</Value>
+    </Setting>
+    <Setting Name="NAV_HR_WINDOW_HRAppraisalKPIInternal_HRAppraisalKPID_Service" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://nav_app.pensure-nigeria.com:14047/LPPFABC/WS/PENSURE%20SHAREHOLDERS%20FUNDS/Page/HRAppraisalKPID</Value>
+    </Setting>
+    <Setting Name="NAV_HR_WINDOW_HRAppraisalKPILearning_HRAppraisalKPIE_Service" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://nav_app.pensure-nigeria.com:14047/LPPFABC/WS/PENSURE%20SHAREHOLDERS%20FUNDS/Page/HRAppraisalKPIE</Value>
+    </Setting>
+    <Setting Name="NAV_HR_WINDOW_HRAppraisalCareerDev_HRAppraisalCareerDevQues_Service" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://nav_app.pensure-nigeria.com:14047/LPPFABC/WS/PENSURE%20SHAREHOLDERS%20FUNDS/Page/HRAppraisalCareerDevQues</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

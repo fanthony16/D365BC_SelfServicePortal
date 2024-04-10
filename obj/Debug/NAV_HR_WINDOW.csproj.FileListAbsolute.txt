@@ -1,0 +1,23 @@
+C:\GeneralProject\HR_LeaveApplication\NAV_HR_Portal\NAV_HR_WINDOW\NAV_HR_WINDOW\bin\Debug\NAV_HR_WINDOW.dll.config
+C:\GeneralProject\HR_LeaveApplication\NAV_HR_Portal\NAV_HR_WINDOW\NAV_HR_WINDOW\bin\Debug\NAV_HR_WINDOW.dll
+C:\GeneralProject\HR_LeaveApplication\NAV_HR_Portal\NAV_HR_WINDOW\NAV_HR_WINDOW\bin\Debug\NAV_HR_WINDOW.pdb
+C:\GeneralProject\HR_LeaveApplication\NAV_HR_Portal\NAV_HR_WINDOW\NAV_HR_WINDOW\bin\Debug\Logger.dll
+C:\GeneralProject\HR_LeaveApplication\NAV_HR_Portal\NAV_HR_WINDOW\NAV_HR_WINDOW\bin\Debug\Logger.pdb
+C:\GeneralProject\HR_LeaveApplication\NAV_HR_Portal\NAV_HR_WINDOW\NAV_HR_WINDOW\bin\Debug\Logger.xml
+C:\GeneralProject\HR_LeaveApplication\NAV_HR_Portal\NAV_HR_WINDOW\NAV_HR_WINDOW\obj\Debug\NAV_HR_WINDOW.csprojResolveAssemblyReference.cache
+C:\GeneralProject\HR_LeaveApplication\NAV_HR_Portal\NAV_HR_WINDOW\NAV_HR_WINDOW\obj\Debug\NAV_HR_WINDOW.dll
+C:\GeneralProject\HR_LeaveApplication\NAV_HR_Portal\NAV_HR_WINDOW\NAV_HR_WINDOW\obj\Debug\NAV_HR_WINDOW.pdb
+C:\Projects\HR_LeaveApplication\HR_LeaveApplication\NAV_HR_Portal\NAV_HR_WINDOW\NAV_HR_WINDOW\bin\Debug\NAV_HR_WINDOW.dll.config
+C:\Projects\HR_LeaveApplication\HR_LeaveApplication\NAV_HR_Portal\NAV_HR_WINDOW\NAV_HR_WINDOW\bin\Debug\NAV_HR_WINDOW.dll
+C:\Projects\HR_LeaveApplication\HR_LeaveApplication\NAV_HR_Portal\NAV_HR_WINDOW\NAV_HR_WINDOW\bin\Debug\NAV_HR_WINDOW.pdb
+C:\Projects\HR_LeaveApplication\HR_LeaveApplication\NAV_HR_Portal\NAV_HR_WINDOW\NAV_HR_WINDOW\obj\Debug\NAV_HR_WINDOW.csproj.CoreCompileInputs.cache
+C:\Projects\HR_LeaveApplication\HR_LeaveApplication\NAV_HR_Portal\NAV_HR_WINDOW\NAV_HR_WINDOW\obj\Debug\NAV_HR_WINDOW.dll
+C:\Projects\HR_LeaveApplication\HR_LeaveApplication\NAV_HR_Portal\NAV_HR_WINDOW\NAV_HR_WINDOW\obj\Debug\NAV_HR_WINDOW.pdb
+C:\Projects\HR_LeaveApplication\HR_LeaveApplication\NAV_HR_Portal\NAV_HR_WINDOW\NAV_HR_WINDOW\obj\Debug\NAV_HR_WINDOW.csprojAssemblyReference.cache
+C:\Projects\HR_LeaveApplication\HR_LeaveApplication\Leadway Pensure\AccessPoint\NAV_HR_WINDOW\NAV_HR_WINDOW\bin\Debug\NAV_HR_WINDOW.dll.config
+C:\Projects\HR_LeaveApplication\HR_LeaveApplication\Leadway Pensure\AccessPoint\NAV_HR_WINDOW\NAV_HR_WINDOW\bin\Debug\NAV_HR_WINDOW.dll
+C:\Projects\HR_LeaveApplication\HR_LeaveApplication\Leadway Pensure\AccessPoint\NAV_HR_WINDOW\NAV_HR_WINDOW\bin\Debug\NAV_HR_WINDOW.pdb
+C:\Projects\HR_LeaveApplication\HR_LeaveApplication\Leadway Pensure\AccessPoint\NAV_HR_WINDOW\NAV_HR_WINDOW\obj\Debug\NAV_HR_WINDOW.csproj.CoreCompileInputs.cache
+C:\Projects\HR_LeaveApplication\HR_LeaveApplication\Leadway Pensure\AccessPoint\NAV_HR_WINDOW\NAV_HR_WINDOW\obj\Debug\NAV_HR_WINDOW.dll
+C:\Projects\HR_LeaveApplication\HR_LeaveApplication\Leadway Pensure\AccessPoint\NAV_HR_WINDOW\NAV_HR_WINDOW\obj\Debug\NAV_HR_WINDOW.pdb
+C:\Projects\HR_LeaveApplication\HR_LeaveApplication\Leadway Pensure\AccessPoint\NAV_HR_WINDOW\NAV_HR_WINDOW\obj\Debug\NAV_HR_WINDOW.csprojAssemblyReference.cache

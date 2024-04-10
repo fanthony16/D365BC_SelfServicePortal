@@ -1,0 +1,1397 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E37D0399-CC9C-4ED8-B050-8ED2ECAD10AB}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>NAV_HR_WINDOW</RootNamespace>
+    <AssemblyName>NAV_HR_WINDOW</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Core.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\AccountChart\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\ApprovalEntries\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\ApprovalEntry\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\EmployeeCard_Service\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\EmployeeList_Service\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\General_Service\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\HRAppraisalCareerDev\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\HRAppraisalKPICustomer\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\HRAppraisalKPIFinance\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\HRAppraisalKPIInternal\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\HRAppraisalKPILearning\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\HRCanteenApplicationList_Service\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\HRCanteenApplication_Service\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\HREmployeeList\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\HRSetup_Service\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\HR_AppraisalBehavour_Service\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\HR_AppraisalH_Service\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\HR_AppraisalSelfEvaluationList_Service\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\HR_AppraisalSelfEvaluation_Service\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\ItemLedgerEntries_Service\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\ItemList_Service\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\LeaveAcknowledgmentList\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\LeaveAcknowledgment\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\LeaveApplicationList_Service\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\LeaveCard_Service\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\LeaveTypes_Service\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\LocationCodes_Service\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\LocationList_Service\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\NoSeries\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\NoSeries_Service\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\PaymentRequestLines_Service\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\PaymentRequestList_Service\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\PaymentRequest_Service\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\PaymentVoucherList_Service\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\ProbationConfirmationCard_Service\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\ProbationConfirmationLines\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\ProbationConfirmationList_Service\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\RCenter\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\RCenter_Service\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\RecieptPaymentTypesList_Service\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\ReLeavers\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\ReLeavers_Service\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\SHFApprovalEntries\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\StaffAdvanceLines_Service\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\StaffAdvanceList_Service\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\StaffAdvanceRequest_Service\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\StaffClaimLine_Service\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\StaffClaimList_Service\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\StaffClaim_Service\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\StoreRequisitionLine_Service\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\StoreRequisitionList_Service\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\StoreRequisition_Service\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\WorkRetirementLine_Service\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\WorkRetirementList_Service\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\WorkRetirement_Service\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="http://nav_app.pensure-nigeria.com:14047/LPPFABC/WS/PENSURE%2520SHAREHOLDERS%2520FUNDS/Codeunit/pfagetbalance">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\General_Service\</RelPath>
+      <UpdateFromURL>http://nav_app.pensure-nigeria.com:14047/LPPFABC/WS/PENSURE%2520SHAREHOLDERS%2520FUNDS/Codeunit/pfagetbalance</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>NAV_HR_WINDOW_General_Service_pfagetbalance</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://nav_app.pensure-nigeria.com:14047/LPPFABC/WS/PENSURE%2520SHAREHOLDERS%2520FUNDS/Page/SHFApprovalEntries">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\ApprovalEntries\</RelPath>
+      <UpdateFromURL>http://nav_app.pensure-nigeria.com:14047/LPPFABC/WS/PENSURE%2520SHAREHOLDERS%2520FUNDS/Page/SHFApprovalEntries</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>NAV_HR_WINDOW_ApprovalEntries_ApprovalEntries_Service</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://nav_app_rep.pensure-nigeria.com:9047/BC140/WS/PENSURE%2520SHAREHOLDERS%2520FUNDS/Page/ConfirmationCard">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\ProbationConfirmationCard_Service\</RelPath>
+      <UpdateFromURL>http://nav_app_rep.pensure-nigeria.com:9047/BC140/WS/PENSURE%2520SHAREHOLDERS%2520FUNDS/Page/ConfirmationCard</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>NAV_HR_WINDOW_ProbationConfirmationCard_Service_ConfirmationCard_Service</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://nav_app_rep.pensure-nigeria.com:9047/BC140/WS/PENSURE%2520SHAREHOLDERS%2520FUNDS/Page/ConfirmationLines">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\ProbationConfirmationLines\</RelPath>
+      <UpdateFromURL>http://nav_app_rep.pensure-nigeria.com:9047/BC140/WS/PENSURE%2520SHAREHOLDERS%2520FUNDS/Page/ConfirmationLines</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>NAV_HR_WINDOW_ProbationConfirmationLines_ConfirmationLines_Service</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://nav_app_rep.pensure-nigeria.com:9047/BC140/WS/PENSURE%2520SHAREHOLDERS%2520FUNDS/Page/EmployeeList">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\EmployeeList_Service\</RelPath>
+      <UpdateFromURL>http://nav_app_rep.pensure-nigeria.com:9047/BC140/WS/PENSURE%2520SHAREHOLDERS%2520FUNDS/Page/EmployeeList</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>NAV_HR_WINDOW_EmployeeList_Service_EmployeeList_Service</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://nav_app.pensure-nigeria.com:14047/LPPFABC/WS/PENSURE%2520SHAREHOLDERS%2520FUNDS/Page/HRAppraisalBehavoirA">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\HR_AppraisalBehavour_Service\</RelPath>
+      <UpdateFromURL>http://nav_app.pensure-nigeria.com:14047/LPPFABC/WS/PENSURE%2520SHAREHOLDERS%2520FUNDS/Page/HRAppraisalBehavoirA</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>NAV_HR_WINDOW_HR_AppraisalBehavour_Service_HRAppraisalBehavoirA_Service</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://nav_app.pensure-nigeria.com:14047/LPPFABC/WS/PENSURE%2520SHAREHOLDERS%2520FUNDS/Page/HRAppraisalCareerDevQues">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\HRAppraisalCareerDev\</RelPath>
+      <UpdateFromURL>http://nav_app.pensure-nigeria.com:14047/LPPFABC/WS/PENSURE%2520SHAREHOLDERS%2520FUNDS/Page/HRAppraisalCareerDevQues</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>NAV_HR_WINDOW_HRAppraisalCareerDev_HRAppraisalCareerDevQues_Service</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://nav_app.pensure-nigeria.com:14047/LPPFABC/WS/PENSURE%2520SHAREHOLDERS%2520FUNDS/Page/HRAppraisalH">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\HR_AppraisalH_Service\</RelPath>
+      <UpdateFromURL>http://nav_app.pensure-nigeria.com:14047/LPPFABC/WS/PENSURE%2520SHAREHOLDERS%2520FUNDS/Page/HRAppraisalH</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>NAV_HR_WINDOW_HR_AppraisalH_Service_HRAppraisalH_Service</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://nav_app.pensure-nigeria.com:14047/LPPFABC/WS/PENSURE%2520SHAREHOLDERS%2520FUNDS/Page/HRAppraisalKPIB">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\HRAppraisalKPIFinance\</RelPath>
+      <UpdateFromURL>http://nav_app.pensure-nigeria.com:14047/LPPFABC/WS/PENSURE%2520SHAREHOLDERS%2520FUNDS/Page/HRAppraisalKPIB</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>NAV_HR_WINDOW_HRAppraisalKPIFinance_HRAppraisalKPIB_Service</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://nav_app.pensure-nigeria.com:14047/LPPFABC/WS/PENSURE%2520SHAREHOLDERS%2520FUNDS/Page/HRAppraisalKPIC">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\HRAppraisalKPICustomer\</RelPath>
+      <UpdateFromURL>http://nav_app.pensure-nigeria.com:14047/LPPFABC/WS/PENSURE%2520SHAREHOLDERS%2520FUNDS/Page/HRAppraisalKPIC</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>NAV_HR_WINDOW_HRAppraisalKPICustomer_HRAppraisalKPIC_Service</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://nav_app.pensure-nigeria.com:14047/LPPFABC/WS/PENSURE%2520SHAREHOLDERS%2520FUNDS/Page/HRAppraisalKPID">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\HRAppraisalKPIInternal\</RelPath>
+      <UpdateFromURL>http://nav_app.pensure-nigeria.com:14047/LPPFABC/WS/PENSURE%2520SHAREHOLDERS%2520FUNDS/Page/HRAppraisalKPID</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>NAV_HR_WINDOW_HRAppraisalKPIInternal_HRAppraisalKPID_Service</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://nav_app.pensure-nigeria.com:14047/LPPFABC/WS/PENSURE%2520SHAREHOLDERS%2520FUNDS/Page/HRAppraisalKPIE">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\HRAppraisalKPILearning\</RelPath>
+      <UpdateFromURL>http://nav_app.pensure-nigeria.com:14047/LPPFABC/WS/PENSURE%2520SHAREHOLDERS%2520FUNDS/Page/HRAppraisalKPIE</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>NAV_HR_WINDOW_HRAppraisalKPILearning_HRAppraisalKPIE_Service</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://nav_app.pensure-nigeria.com:14047/LPPFABC/WS/PENSURE%2520SHAREHOLDERS%2520FUNDS/Page/HRAppraisalSelfEvaluation">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\HR_AppraisalSelfEvaluation_Service\</RelPath>
+      <UpdateFromURL>http://nav_app.pensure-nigeria.com:14047/LPPFABC/WS/PENSURE%2520SHAREHOLDERS%2520FUNDS/Page/HRAppraisalSelfEvaluation</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>NAV_HR_WINDOW_HR_AppraisalSelfEvaluation_Service_HRAppraisalSelfEvaluation_Service</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://nav_app_rep.pensure-nigeria.com:9047/BC140/WS/PENSURE%2520SHAREHOLDERS%2520FUNDS/Page/HRCanteenApplicationCard">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\HRCanteenApplication_Service\</RelPath>
+      <UpdateFromURL>http://nav_app_rep.pensure-nigeria.com:9047/BC140/WS/PENSURE%2520SHAREHOLDERS%2520FUNDS/Page/HRCanteenApplicationCard</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>NAV_HR_WINDOW_HRCanteenApplication_Service_HRCanteenApplicationCard_Service</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://nav_app_rep.pensure-nigeria.com:9047/BC140/WS/PENSURE%2520SHAREHOLDERS%2520FUNDS/Page/HRCanteenApplicationList">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\HRCanteenApplicationList_Service\</RelPath>
+      <UpdateFromURL>http://nav_app_rep.pensure-nigeria.com:9047/BC140/WS/PENSURE%2520SHAREHOLDERS%2520FUNDS/Page/HRCanteenApplicationList</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>NAV_HR_WINDOW_HRCanteenApplicationList_Service_HRCanteenApplicationList_Service</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://nav_app.pensure-nigeria.com:14047/LPPFABC/WS/PENSURE%2520SHAREHOLDERS%2520FUNDS/Page/HREmployeeCard">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\EmployeeCard_Service\</RelPath>
+      <UpdateFromURL>http://nav_app.pensure-nigeria.com:14047/LPPFABC/WS/PENSURE%2520SHAREHOLDERS%2520FUNDS/Page/HREmployeeCard</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>NAV_HR_WINDOW_EmployeeCard_Service_HREmployeeCard_Service</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://nav_app.pensure-nigeria.com:14047/LPPFABC/WS/PENSURE%2520SHAREHOLDERS%2520FUNDS/Page/HRSetup">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\HRSetup_Service\</RelPath>
+      <UpdateFromURL>http://nav_app.pensure-nigeria.com:14047/LPPFABC/WS/PENSURE%2520SHAREHOLDERS%2520FUNDS/Page/HRSetup</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>NAV_HR_WINDOW_HRSetup_Service_HRSetup_Service</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://nav_app.pensure-nigeria.com:14047/LPPFABC/WS/PENSURE%2520SHAREHOLDERS%2520FUNDS/Page/HREmployeeListNew">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\HREmployeeList\</RelPath>
+      <UpdateFromURL>http://nav_app.pensure-nigeria.com:14047/LPPFABC/WS/PENSURE%2520SHAREHOLDERS%2520FUNDS/Page/HREmployeeListNew</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>NAV_HR_WINDOW_HREmployeeList_HREmployeeListNew_Service</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://nav_app_rep.pensure-nigeria.com:9047/BC140/WS/PENSURE%2520SHAREHOLDERS%2520FUNDS/Page/ItemLedgerEntries">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\ItemLedgerEntries_Service\</RelPath>
+      <UpdateFromURL>http://nav_app_rep.pensure-nigeria.com:9047/BC140/WS/PENSURE%2520SHAREHOLDERS%2520FUNDS/Page/ItemLedgerEntries</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>NAV_HR_WINDOW_ItemLedgerEntries_Service_ItemLedgerEntries_Service</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://nav_app.pensure-nigeria.com:14047/LPPFABC/WS/PENSURE%2520SHAREHOLDERS%2520FUNDS/Page/ItemList">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\ItemList_Service\</RelPath>
+      <UpdateFromURL>http://nav_app.pensure-nigeria.com:14047/LPPFABC/WS/PENSURE%2520SHAREHOLDERS%2520FUNDS/Page/ItemList</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>NAV_HR_WINDOW_ItemList_Service_ItemList_Service</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://nav_app.pensure-nigeria.com:14047/LPPFABC/WS/PENSURE%2520SHAREHOLDERS%2520FUNDS/Page/LeaveApplication">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\LeaveCard_Service\</RelPath>
+      <UpdateFromURL>http://nav_app.pensure-nigeria.com:14047/LPPFABC/WS/PENSURE%2520SHAREHOLDERS%2520FUNDS/Page/LeaveApplication</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>NAV_HR_WINDOW_LeaveCard_Service_LeaveApplication_Service</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://nav_app.pensure-nigeria.com:14047/LPPFABC/WS/PENSURE%2520SHAREHOLDERS%2520FUNDS/Page/LeaveApplicationAll">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\LeaveApplicationList_Service\</RelPath>
+      <UpdateFromURL>http://nav_app.pensure-nigeria.com:14047/LPPFABC/WS/PENSURE%2520SHAREHOLDERS%2520FUNDS/Page/LeaveApplicationAll</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>NAV_HR_WINDOW_LeaveApplicationList_Service_LeaveApplicationAll_Service</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://nav_app.pensure-nigeria.com:14047/LPPFABC/WS/PENSURE%2520SHAREHOLDERS%2520FUNDS/Page/LeaveTypes">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\LeaveTypes_Service\</RelPath>
+      <UpdateFromURL>http://nav_app.pensure-nigeria.com:14047/LPPFABC/WS/PENSURE%2520SHAREHOLDERS%2520FUNDS/Page/LeaveTypes</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>NAV_HR_WINDOW_LeaveTypes_Service_LeaveTypes_Service</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://nav_app.pensure-nigeria.com:14047/LPPFABC/WS/PENSURE%2520SHAREHOLDERS%2520FUNDS/Page/LocationCodes">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\LocationCodes_Service\</RelPath>
+      <UpdateFromURL>http://nav_app.pensure-nigeria.com:14047/LPPFABC/WS/PENSURE%2520SHAREHOLDERS%2520FUNDS/Page/LocationCodes</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>NAV_HR_WINDOW_LocationCodes_Service_LocationCodes_Service</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://nav_app.pensure-nigeria.com:14047/LPPFABC/WS/PENSURE%2520SHAREHOLDERS%2520FUNDS/Page/LocationList">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\LocationList_Service\</RelPath>
+      <UpdateFromURL>http://nav_app.pensure-nigeria.com:14047/LPPFABC/WS/PENSURE%2520SHAREHOLDERS%2520FUNDS/Page/LocationList</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>NAV_HR_WINDOW_LocationList_Service_LocationList_Service</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://nav_app_rep.pensure-nigeria.com:9047/BC140/WS/PENSURE%2520SHAREHOLDERS%2520FUNDS/Page/NoSerialIntegration">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\NoSeries_Service\</RelPath>
+      <UpdateFromURL>http://nav_app_rep.pensure-nigeria.com:9047/BC140/WS/PENSURE%2520SHAREHOLDERS%2520FUNDS/Page/NoSerialIntegration</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>NAV_HR_WINDOW_NoSeries_Service_NoSerialIntegration_Service</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://nav_app.pensure-nigeria.com:14047/LPPFABC/WS/PENSURE%2520SHAREHOLDERS%2520FUNDS/Page/PaymentLine">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\PaymentRequestLines_Service\</RelPath>
+      <UpdateFromURL>http://nav_app.pensure-nigeria.com:14047/LPPFABC/WS/PENSURE%2520SHAREHOLDERS%2520FUNDS/Page/PaymentLine</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>NAV_HR_WINDOW_PaymentRequestLines_Service_PaymentLine_Service</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://nav_app.pensure-nigeria.com:14047/LPPFABC/WS/PENSURE%2520SHAREHOLDERS%2520FUNDS/Page/PaymentRequest">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\PaymentRequest_Service\</RelPath>
+      <UpdateFromURL>http://nav_app.pensure-nigeria.com:14047/LPPFABC/WS/PENSURE%2520SHAREHOLDERS%2520FUNDS/Page/PaymentRequest</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>NAV_HR_WINDOW_PaymentRequest_Service_PaymentRequest_Service</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://nav_app.pensure-nigeria.com:14047/LPPFABC/WS/PENSURE%2520SHAREHOLDERS%2520FUNDS/Page/PaymentRequestList">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\PaymentRequestList_Service\</RelPath>
+      <UpdateFromURL>http://nav_app.pensure-nigeria.com:14047/LPPFABC/WS/PENSURE%2520SHAREHOLDERS%2520FUNDS/Page/PaymentRequestList</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>NAV_HR_WINDOW_PaymentRequestList_Service_PaymentRequestList_Service</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://nav_app.pensure-nigeria.com:14047/LPPFABC/WS/PENSURE%2520SHAREHOLDERS%2520FUNDS/Page/PaymentVoucherList">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\PaymentVoucherList_Service\</RelPath>
+      <UpdateFromURL>http://nav_app.pensure-nigeria.com:14047/LPPFABC/WS/PENSURE%2520SHAREHOLDERS%2520FUNDS/Page/PaymentVoucherList</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>NAV_HR_WINDOW_PaymentVoucherList_Service_PaymentVoucherList_Service</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://nav_app_rep.pensure-nigeria.com:9047/BC140/WS/PENSURE%2520SHAREHOLDERS%2520FUNDS/Page/ProbationConfirmationList">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\ProbationConfirmationList_Service\</RelPath>
+      <UpdateFromURL>http://nav_app_rep.pensure-nigeria.com:9047/BC140/WS/PENSURE%2520SHAREHOLDERS%2520FUNDS/Page/ProbationConfirmationList</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>NAV_HR_WINDOW_ProbationConfirmationList_Service_ProbationConfirmationList_Service</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://nav_app.pensure-nigeria.com:14047/LPPFABC/WS/PENSURE%2520SHAREHOLDERS%2520FUNDS/Page/ReceiptAndPaymentTypesList">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\RecieptPaymentTypesList_Service\</RelPath>
+      <UpdateFromURL>http://nav_app.pensure-nigeria.com:14047/LPPFABC/WS/PENSURE%2520SHAREHOLDERS%2520FUNDS/Page/ReceiptAndPaymentTypesList</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>NAV_HR_WINDOW_RecieptPaymentTypesList_Service_ReceiptAndPaymentTypesList_Service</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://nav_app.pensure-nigeria.com:14047/LPPFABC/WS/PENSURE%2520SHAREHOLDERS%2520FUNDS/Page/Releavers">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\ReLeavers_Service\</RelPath>
+      <UpdateFromURL>http://nav_app.pensure-nigeria.com:14047/LPPFABC/WS/PENSURE%2520SHAREHOLDERS%2520FUNDS/Page/Releavers</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>NAV_HR_WINDOW_ReLeavers_Service_Releavers_Service</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://nav_app.pensure-nigeria.com:14047/LPPFABC/WS/PENSURE%2520SHAREHOLDERS%2520FUNDS/Page/ResponsibilityCenter">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\RCenter_Service\</RelPath>
+      <UpdateFromURL>http://nav_app.pensure-nigeria.com:14047/LPPFABC/WS/PENSURE%2520SHAREHOLDERS%2520FUNDS/Page/ResponsibilityCenter</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>NAV_HR_WINDOW_RCenter_Service_ResponsibilityCenter_Service</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://nav_app_rep.pensure-nigeria.com:9047/BC140/WS/PENSURE%2520SHAREHOLDERS%2520FUNDS/Page/RetirementLine">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\WorkRetirementLine_Service\</RelPath>
+      <UpdateFromURL>http://nav_app_rep.pensure-nigeria.com:9047/BC140/WS/PENSURE%2520SHAREHOLDERS%2520FUNDS/Page/RetirementLine</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>NAV_HR_WINDOW_WorkRetirementLine_Service_RetirementLine_Service</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://nav_app.pensure-nigeria.com:14047/LPPFABC/WS/PENSURE%2520SHAREHOLDERS%2520FUNDS/Page/SelfEvaluation">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\HR_AppraisalSelfEvaluationList_Service\</RelPath>
+      <UpdateFromURL>http://nav_app.pensure-nigeria.com:14047/LPPFABC/WS/PENSURE%2520SHAREHOLDERS%2520FUNDS/Page/SelfEvaluation</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>NAV_HR_WINDOW_HR_AppraisalSelfEvaluationList_Service_SelfEvaluation_Service</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://nav_app_rep.pensure-nigeria.com:9047/BC140/WS/PENSURE%2520SHAREHOLDERS%2520FUNDS/Page/SHFApprovalEntries">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\SHFApprovalEntries\</RelPath>
+      <UpdateFromURL>http://nav_app_rep.pensure-nigeria.com:9047/BC140/WS/PENSURE%2520SHAREHOLDERS%2520FUNDS/Page/SHFApprovalEntries</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>NAV_HR_WINDOW_SHFApprovalEntries_SHFApprovalEntries_Service</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://nav_app.pensure-nigeria.com:14047/LPPFABC/WS/PENSURE%2520SHAREHOLDERS%2520FUNDS/Page/StaffAdvanceLines">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\StaffAdvanceLines_Service\</RelPath>
+      <UpdateFromURL>http://nav_app.pensure-nigeria.com:14047/LPPFABC/WS/PENSURE%2520SHAREHOLDERS%2520FUNDS/Page/StaffAdvanceLines</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>NAV_HR_WINDOW_StaffAdvanceLines_Service_StaffAdvanceLines_Service</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://nav_app.pensure-nigeria.com:14047/LPPFABC/WS/PENSURE%2520SHAREHOLDERS%2520FUNDS/Page/StaffAdvanceRequest">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\StaffAdvanceRequest_Service\</RelPath>
+      <UpdateFromURL>http://nav_app.pensure-nigeria.com:14047/LPPFABC/WS/PENSURE%2520SHAREHOLDERS%2520FUNDS/Page/StaffAdvanceRequest</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>NAV_HR_WINDOW_StaffAdvanceRequest_Service_StaffAdvanceRequest_Service</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://nav_app.pensure-nigeria.com:14047/LPPFABC/WS/PENSURE%2520SHAREHOLDERS%2520FUNDS/Page/StaffAdvanceRequests">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\StaffAdvanceList_Service\</RelPath>
+      <UpdateFromURL>http://nav_app.pensure-nigeria.com:14047/LPPFABC/WS/PENSURE%2520SHAREHOLDERS%2520FUNDS/Page/StaffAdvanceRequests</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>NAV_HR_WINDOW_StaffAdvanceList_Service_StaffAdvanceRequests_Service</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://nav_app.pensure-nigeria.com:14047/LPPFABC/WS/PENSURE%2520SHAREHOLDERS%2520FUNDS/Page/StaffClaim">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\StaffClaim_Service\</RelPath>
+      <UpdateFromURL>http://nav_app.pensure-nigeria.com:14047/LPPFABC/WS/PENSURE%2520SHAREHOLDERS%2520FUNDS/Page/StaffClaim</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>NAV_HR_WINDOW_StaffClaim_Service_StaffClaim_Service</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://nav_app.pensure-nigeria.com:14047/LPPFABC/WS/PENSURE%2520SHAREHOLDERS%2520FUNDS/Page/StaffClaimLine">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\StaffClaimLine_Service\</RelPath>
+      <UpdateFromURL>http://nav_app.pensure-nigeria.com:14047/LPPFABC/WS/PENSURE%2520SHAREHOLDERS%2520FUNDS/Page/StaffClaimLine</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>NAV_HR_WINDOW_StaffClaimLine_Service_StaffClaimLine_Service</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://nav_app.pensure-nigeria.com:14047/LPPFABC/WS/PENSURE%2520SHAREHOLDERS%2520FUNDS/Page/StaffClaimList">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\StaffClaimList_Service\</RelPath>
+      <UpdateFromURL>http://nav_app.pensure-nigeria.com:14047/LPPFABC/WS/PENSURE%2520SHAREHOLDERS%2520FUNDS/Page/StaffClaimList</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>NAV_HR_WINDOW_StaffClaimList_Service_StaffClaimList_Service</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://nav_app_rep.pensure-nigeria.com:9047/BC140/WS/PENSURE%2520SHAREHOLDERS%2520FUNDS/Page/StoreRequisitionHeder">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\StoreRequisition_Service\</RelPath>
+      <UpdateFromURL>http://nav_app_rep.pensure-nigeria.com:9047/BC140/WS/PENSURE%2520SHAREHOLDERS%2520FUNDS/Page/StoreRequisitionHeder</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>NAV_HR_WINDOW_StoreRequisition_Service_StoreRequisitionHeder_Service</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://nav_app.pensure-nigeria.com:14047/LPPFABC/WS/PENSURE%2520SHAREHOLDERS%2520FUNDS/Page/StoreRequisitionList">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\StoreRequisitionList_Service\</RelPath>
+      <UpdateFromURL>http://nav_app.pensure-nigeria.com:14047/LPPFABC/WS/PENSURE%2520SHAREHOLDERS%2520FUNDS/Page/StoreRequisitionList</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>NAV_HR_WINDOW_StoreRequisitionList_Service_StoreRequisitionList_Service</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://nav_app.pensure-nigeria.com:14047/LPPFABC/WS/PENSURE%2520SHAREHOLDERS%2520FUNDS/Page/Store_Requisition_Line">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\StoreRequisitionLine_Service\</RelPath>
+      <UpdateFromURL>http://nav_app.pensure-nigeria.com:14047/LPPFABC/WS/PENSURE%2520SHAREHOLDERS%2520FUNDS/Page/Store_Requisition_Line</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>NAV_HR_WINDOW_StoreRequisitionLine_Service_Store_Requisition_Line_Service</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://nav_app.pensure-nigeria.com:14047/LPPFABC/WS/PENSURE%2520SHAREHOLDERS%2520FUNDS/Page/WorkRetirement">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\WorkRetirement_Service\</RelPath>
+      <UpdateFromURL>http://nav_app.pensure-nigeria.com:14047/LPPFABC/WS/PENSURE%2520SHAREHOLDERS%2520FUNDS/Page/WorkRetirement</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>NAV_HR_WINDOW_WorkRetirement_Service_WorkRetirement_Service</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://nav_app.pensure-nigeria.com:14047/LPPFABC/WS/PENSURE%2520SHAREHOLDERS%2520FUNDS/Page/WorkRetirementList">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\WorkRetirementList_Service\</RelPath>
+      <UpdateFromURL>http://nav_app.pensure-nigeria.com:14047/LPPFABC/WS/PENSURE%2520SHAREHOLDERS%2520FUNDS/Page/WorkRetirementList</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>NAV_HR_WINDOW_WorkRetirementList_Service_WorkRetirementList_Service</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://nav_test.pensure-nigeria.com:1147/PENSURETESTFUND/WS/PENSURE%2520SHAREHOLDERS%2520FUNDS/Page/AccChart">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\AccountChart\</RelPath>
+      <UpdateFromURL>http://nav_test.pensure-nigeria.com:1147/PENSURETESTFUND/WS/PENSURE%2520SHAREHOLDERS%2520FUNDS/Page/AccChart</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>NAV_HR_WINDOW_AccountChart_AccChart_Service</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://nav_test.pensure-nigeria.com:1147/PENSURETESTFUND/WS/PENSURE%2520SHAREHOLDERS%2520FUNDS/Page/ApprovalEntry">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\ApprovalEntry\</RelPath>
+      <UpdateFromURL>http://nav_test.pensure-nigeria.com:1147/PENSURETESTFUND/WS/PENSURE%2520SHAREHOLDERS%2520FUNDS/Page/ApprovalEntry</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>NAV_HR_WINDOW_ApprovalEntry_ApprovalEntry_Service</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://nav_test.pensure-nigeria.com:1147/PENSURETESTFUND/WS/PENSURE%2520SHAREHOLDERS%2520FUNDS/Page/NoSerialIntegration">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\NoSeries\</RelPath>
+      <UpdateFromURL>http://nav_test.pensure-nigeria.com:1147/PENSURETESTFUND/WS/PENSURE%2520SHAREHOLDERS%2520FUNDS/Page/NoSerialIntegration</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>NAV_HR_WINDOW_NoSeries_NoSerialIntegration_Service</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://nav_test.pensure-nigeria.com:1147/PENSURETESTFUND/WS/PENSURE%2520SHAREHOLDERS%2520FUNDS/Page/Releavers">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\ReLeavers\</RelPath>
+      <UpdateFromURL>http://nav_test.pensure-nigeria.com:1147/PENSURETESTFUND/WS/PENSURE%2520SHAREHOLDERS%2520FUNDS/Page/Releavers</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>NAV_HR_WINDOW_ReLeavers_Releavers_Service</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://nav_test.pensure-nigeria.com:1147/PENSURETESTFUND/WS/PENSURE%2520SHAREHOLDERS%2520FUNDS/Page/ResponsibilityCenter">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\RCenter\</RelPath>
+      <UpdateFromURL>http://nav_test.pensure-nigeria.com:1147/PENSURETESTFUND/WS/PENSURE%2520SHAREHOLDERS%2520FUNDS/Page/ResponsibilityCenter</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>NAV_HR_WINDOW_RCenter_ResponsibilityCenter_Service</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://nav_test.pensure-nigeria.com:1147/PENSURETESTFUND/WS/PENSURE%2520SHAREHOLDERS%2520FUNDS/Page/LeaveAcknowledgment">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\LeaveAcknowledgment\</RelPath>
+      <UpdateFromURL>http://nav_test.pensure-nigeria.com:1147/PENSURETESTFUND/WS/PENSURE%2520SHAREHOLDERS%2520FUNDS/Page/LeaveAcknowledgment</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>NAV_HR_WINDOW_LeaveAcknowledgment_LeaveAcknowledgmentCard_Service</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://nav_test.pensure-nigeria.com:1147/PENSURETESTFUND/WS/PENSURE%2520SHAREHOLDERS%2520FUNDS/Page/LeaveAcknowledgmentList">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\LeaveAcknowledgmentList\</RelPath>
+      <UpdateFromURL>http://nav_test.pensure-nigeria.com:1147/PENSURETESTFUND/WS/PENSURE%2520SHAREHOLDERS%2520FUNDS/Page/LeaveAcknowledgmentList</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>NAV_HR_WINDOW_LeaveAcknowledgmentList_LeaveAcknowledgmentList_Service</CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="app_live.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\AccountChart\AccChart.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\AccountChart\AccChart.wsdl" />
+    <None Include="Web References\AccountChart\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\ApprovalEntries\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\ApprovalEntries\SHFApprovalEntries.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\ApprovalEntries\SHFApprovalEntries.wsdl" />
+    <None Include="Web References\ApprovalEntry\ApprovalEntry.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\ApprovalEntry\ApprovalEntry.wsdl" />
+    <None Include="Web References\ApprovalEntry\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\EmployeeCard_Service\HREmployeeCard.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\EmployeeCard_Service\HREmployeeCard.wsdl" />
+    <None Include="Web References\EmployeeCard_Service\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\EmployeeList_Service\EmployeeList.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\EmployeeList_Service\EmployeeList.wsdl" />
+    <None Include="Web References\EmployeeList_Service\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\General_Service\pfagetbalance.wsdl" />
+    <None Include="Web References\General_Service\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\HRAppraisalCareerDev\HRAppraisalCareerDevQues.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\HRAppraisalCareerDev\HRAppraisalCareerDevQues.wsdl" />
+    <None Include="Web References\HRAppraisalCareerDev\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\HRAppraisalKPICustomer\HRAppraisalKPIC.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\HRAppraisalKPICustomer\HRAppraisalKPIC.wsdl" />
+    <None Include="Web References\HRAppraisalKPICustomer\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\HRAppraisalKPIFinance\HRAppraisalKPIB.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\HRAppraisalKPIFinance\HRAppraisalKPIB.wsdl" />
+    <None Include="Web References\HRAppraisalKPIFinance\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\HRAppraisalKPIInternal\HRAppraisalKPID.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\HRAppraisalKPIInternal\HRAppraisalKPID.wsdl" />
+    <None Include="Web References\HRAppraisalKPIInternal\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\HRAppraisalKPILearning\HRAppraisalKPIE.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\HRAppraisalKPILearning\HRAppraisalKPIE.wsdl" />
+    <None Include="Web References\HRAppraisalKPILearning\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\HRCanteenApplicationList_Service\HRCanteenApplicationList.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\HRCanteenApplicationList_Service\HRCanteenApplicationList.wsdl" />
+    <None Include="Web References\HRCanteenApplicationList_Service\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\HRCanteenApplication_Service\HRCanteenApplicationCard.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\HRCanteenApplication_Service\HRCanteenApplicationCard.wsdl" />
+    <None Include="Web References\HRCanteenApplication_Service\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\HREmployeeList\HREmployeeListNew.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\HREmployeeList\HREmployeeListNew.wsdl" />
+    <None Include="Web References\HREmployeeList\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\HRSetup_Service\HRSetup.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\HRSetup_Service\HRSetup.wsdl" />
+    <None Include="Web References\HRSetup_Service\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\HR_AppraisalBehavour_Service\HRAppraisalBehavoirA.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\HR_AppraisalBehavour_Service\HRAppraisalBehavoirA.wsdl" />
+    <None Include="Web References\HR_AppraisalBehavour_Service\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\HR_AppraisalH_Service\HRAppraisalH.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\HR_AppraisalH_Service\HRAppraisalH.wsdl" />
+    <None Include="Web References\HR_AppraisalH_Service\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\HR_AppraisalSelfEvaluationList_Service\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\HR_AppraisalSelfEvaluationList_Service\SelfEvaluation.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\HR_AppraisalSelfEvaluationList_Service\SelfEvaluation.wsdl" />
+    <None Include="Web References\HR_AppraisalSelfEvaluation_Service\HRAppraisalSelfEvaluation.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\HR_AppraisalSelfEvaluation_Service\HRAppraisalSelfEvaluation.wsdl" />
+    <None Include="Web References\HR_AppraisalSelfEvaluation_Service\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\ItemLedgerEntries_Service\ItemLedgerEntries.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\ItemLedgerEntries_Service\ItemLedgerEntries.wsdl" />
+    <None Include="Web References\ItemLedgerEntries_Service\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\ItemList_Service\ItemList.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\ItemList_Service\ItemList.wsdl" />
+    <None Include="Web References\ItemList_Service\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\LeaveAcknowledgmentList\LeaveAcknowledgmentList.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\LeaveAcknowledgmentList\LeaveAcknowledgmentList.wsdl" />
+    <None Include="Web References\LeaveAcknowledgmentList\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\LeaveAcknowledgment\LeaveAcknowledgment.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\LeaveAcknowledgment\LeaveAcknowledgment.wsdl" />
+    <None Include="Web References\LeaveAcknowledgment\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\LeaveApplicationList_Service\LeaveApplicationAll.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\LeaveApplicationList_Service\LeaveApplicationAll.wsdl" />
+    <None Include="Web References\LeaveApplicationList_Service\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\LeaveCard_Service\LeaveApplication.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\LeaveCard_Service\LeaveApplication.wsdl" />
+    <None Include="Web References\LeaveCard_Service\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\LeaveTypes_Service\LeaveTypes.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\LeaveTypes_Service\LeaveTypes.wsdl" />
+    <None Include="Web References\LeaveTypes_Service\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\LocationCodes_Service\LocationCodes.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\LocationCodes_Service\LocationCodes.wsdl" />
+    <None Include="Web References\LocationCodes_Service\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\LocationList_Service\LocationList.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\LocationList_Service\LocationList.wsdl" />
+    <None Include="Web References\LocationList_Service\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\NoSeries\NoSerialIntegration.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\NoSeries\NoSerialIntegration.wsdl" />
+    <None Include="Web References\NoSeries\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\NoSeries_Service\NoSerialIntegration.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\NoSeries_Service\NoSerialIntegration.wsdl" />
+    <None Include="Web References\NoSeries_Service\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\PaymentRequestLines_Service\PaymentLine.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\PaymentRequestLines_Service\PaymentLine.wsdl" />
+    <None Include="Web References\PaymentRequestLines_Service\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\PaymentRequestList_Service\PaymentRequestList.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\PaymentRequestList_Service\PaymentRequestList.wsdl" />
+    <None Include="Web References\PaymentRequestList_Service\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\PaymentRequest_Service\PaymentRequest.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\PaymentRequest_Service\PaymentRequest.wsdl" />
+    <None Include="Web References\PaymentRequest_Service\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\PaymentVoucherList_Service\PaymentVoucherList.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\PaymentVoucherList_Service\PaymentVoucherList.wsdl" />
+    <None Include="Web References\PaymentVoucherList_Service\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\ProbationConfirmationCard_Service\ConfirmationCard.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\ProbationConfirmationCard_Service\ConfirmationCard.wsdl" />
+    <None Include="Web References\ProbationConfirmationCard_Service\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\ProbationConfirmationLines\ConfirmationLines.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\ProbationConfirmationLines\ConfirmationLines.wsdl" />
+    <None Include="Web References\ProbationConfirmationLines\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\ProbationConfirmationList_Service\ProbationConfirmationList.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\ProbationConfirmationList_Service\ProbationConfirmationList.wsdl" />
+    <None Include="Web References\ProbationConfirmationList_Service\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\RCenter\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\RCenter\ResponsibilityCenter.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\RCenter\ResponsibilityCenter.wsdl" />
+    <None Include="Web References\RCenter_Service\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\RCenter_Service\ResponsibilityCenter.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\RCenter_Service\ResponsibilityCenter.wsdl" />
+    <None Include="Web References\RecieptPaymentTypesList_Service\ReceiptAndPaymentTypesList.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\RecieptPaymentTypesList_Service\ReceiptAndPaymentTypesList.wsdl" />
+    <None Include="Web References\RecieptPaymentTypesList_Service\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\ReLeavers\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\ReLeavers\Releavers.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\ReLeavers\Releavers.wsdl" />
+    <None Include="Web References\ReLeavers_Service\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\ReLeavers_Service\Releavers.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\ReLeavers_Service\Releavers.wsdl" />
+    <None Include="Web References\SHFApprovalEntries\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\SHFApprovalEntries\SHFApprovalEntries.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\SHFApprovalEntries\SHFApprovalEntries.wsdl" />
+    <None Include="Web References\StaffAdvanceLines_Service\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\StaffAdvanceLines_Service\StaffAdvanceLines.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\StaffAdvanceLines_Service\StaffAdvanceLines.wsdl" />
+    <None Include="Web References\StaffAdvanceList_Service\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\StaffAdvanceList_Service\StaffAdvanceRequests.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\StaffAdvanceList_Service\StaffAdvanceRequests.wsdl" />
+    <None Include="Web References\StaffAdvanceRequest_Service\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\StaffAdvanceRequest_Service\StaffAdvanceRequest.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\StaffAdvanceRequest_Service\StaffAdvanceRequest.wsdl" />
+    <None Include="Web References\StaffClaimLine_Service\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\StaffClaimLine_Service\StaffClaimLine.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\StaffClaimLine_Service\StaffClaimLine.wsdl" />
+    <None Include="Web References\StaffClaimList_Service\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\StaffClaimList_Service\StaffClaimList.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\StaffClaimList_Service\StaffClaimList.wsdl" />
+    <None Include="Web References\StaffClaim_Service\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\StaffClaim_Service\StaffClaim.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\StaffClaim_Service\StaffClaim.wsdl" />
+    <None Include="Web References\StoreRequisitionLine_Service\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\StoreRequisitionLine_Service\Store_Requisition_Line.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\StoreRequisitionLine_Service\Store_Requisition_Line.wsdl" />
+    <None Include="Web References\StoreRequisitionList_Service\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\StoreRequisitionList_Service\StoreRequisitionList.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\StoreRequisitionList_Service\StoreRequisitionList.wsdl" />
+    <None Include="Web References\StoreRequisition_Service\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\StoreRequisition_Service\StoreRequisitionHeder.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\StoreRequisition_Service\StoreRequisitionHeder.wsdl" />
+    <None Include="Web References\WorkRetirementLine_Service\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\WorkRetirementLine_Service\RetirementLine.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WorkRetirementLine_Service\RetirementLine.wsdl" />
+    <None Include="Web References\WorkRetirementList_Service\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\WorkRetirementList_Service\WorkRetirementList.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WorkRetirementList_Service\WorkRetirementList.wsdl" />
+    <None Include="Web References\WorkRetirement_Service\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\WorkRetirement_Service\WorkRetirement.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WorkRetirement_Service\WorkRetirement.wsdl" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,2161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:tns="urn:microsoft-dynamics-schemas/codeunit/pfagetbalance" targetNamespace="urn:microsoft-dynamics-schemas/codeunit/pfagetbalance" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <schema elementFormDefault="qualified" targetNamespace="urn:microsoft-dynamics-schemas/codeunit/pfagetbalance" xmlns="http://www.w3.org/2001/XMLSchema">
+      <element name="GetBalanceRSA">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="rSAPIN" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="valueDate" type="date" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="GetBalanceRSA_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="decimal" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="GetBalanceRSAByFund">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="rSAPIN" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="fundType" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="valueDate" type="date" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="GetBalanceRSAByFund_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="decimal" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="GetBalanceAVC">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="rSAPIN" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="valueDate" type="date" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="GetBalanceAVC_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="decimal" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="GetAVCWithdrawable">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="rSAPIN" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="valueDate" type="date" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="GetAVCWithdrawable_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="decimal" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="GetFundID">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="rSAPIN" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="GetFundID_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="int" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="GetUnitPriceDate">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="fundID" type="int" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="GetUnitPriceDate_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="date" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="GetEmployeeID">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="rSAPIN" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="GetEmployeeID_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="int" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="GeUnitTotalByFund">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="rSAPIN" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="fundType" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="valueDate" type="date" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="GeUnitTotalByFund_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="decimal" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="GetContributionTotal">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="rSAPIN" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="valueDate" type="date" />
+            <element minOccurs="1" maxOccurs="1" name="fundCode" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="GetContributionTotal_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="decimal" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="GetLastValueDate">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="rSAPIN" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="valueDate" type="date" />
+            <element minOccurs="1" maxOccurs="1" name="fundType" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="GetLastValueDate_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="date" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="GetActiveParticpants">
+        <complexType>
+          <sequence />
+        </complexType>
+      </element>
+      <element name="GetActiveParticpants_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="int" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="GetUnitPrice">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="fundID" type="int" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="GetUnitPrice_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="decimal" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="GetFundStartDate">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="employeeID" type="int" />
+            <element minOccurs="1" maxOccurs="1" name="fundID" type="int" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="GetFundStartDate_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="date" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="GetRetireFundStatus">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="rSAPIN" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="GetRetireFundStatus_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="boolean" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="GetAVCWithdrawableGross">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="rSAPIN" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="valueDate" type="date" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="GetAVCWithdrawableGross_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="decimal" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="GetBalanceLegacy">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="rSAPIN" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="valueDate" type="date" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="GetBalanceLegacy_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="decimal" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="GetAVCWithdrawableUnits">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="rSAPIN" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="valueDate" type="date" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="GetAVCWithdrawableUnits_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="decimal" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="GetBalanceAVCGross">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="rSAPIN" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="valueDate" type="date" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="GetBalanceAVCGross_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="decimal" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="UpdateAccessedAvc">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="rSAPIN" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="payDate" type="date" />
+            <element minOccurs="1" maxOccurs="1" name="payAmount" type="decimal" />
+            <element minOccurs="1" maxOccurs="1" name="unitPrice" type="decimal" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="UpdateAccessedAvc_Result">
+        <complexType>
+          <sequence />
+        </complexType>
+      </element>
+      <element name="ValidatePINReferenceNumber">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="rSAPIN" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="ValidatePINReferenceNumber_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="GetBalanceByFund">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="rSAPIN" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="fundType" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="valueDate" type="date" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="GetBalanceByFund_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="GetAVCTaxFree">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="rSAPIN" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="valueDate" type="date" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="GetAVCTaxFree_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="decimal" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="GetInvestmentIncome">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="rSAPIN" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="fundCode" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="GetInvestmentIncome_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="decimal" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="ValidatePWPayment">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="rSAPIN" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="ValidatePWPayment_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="boolean" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="GetUnitsRSA">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="rSAPIN" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="valueDate" type="date" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="GetUnitsRSA_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="decimal" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="GetContributionQtrTotal">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="rSAPIN" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="startDate" type="date" />
+            <element minOccurs="1" maxOccurs="1" name="endDate" type="date" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="GetContributionQtrTotal_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="decimal" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="GetAVCWithdrawableByFund">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="rSAPIN" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="valueDate" type="date" />
+            <element minOccurs="1" maxOccurs="1" name="fundCode" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="GetAVCWithdrawableByFund_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="decimal" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="DREConfirmed">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="employeeId" type="int" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="DREConfirmed_Result">
+        <complexType>
+          <sequence />
+        </complexType>
+      </element>
+      <element name="DREBiometrics">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="employeeIdBio" type="int" />
+            <element minOccurs="1" maxOccurs="1" name="rsaPicture" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="rsaSignature" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="DREBiometrics_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="boolean" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="DREInsert">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="employeeIdBio" type="int" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="DREInsert_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="boolean" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="ClearDRE">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="employeeId" type="int" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="ClearDRE_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="NewGetBalanceRSA">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="qRSAPIN" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="qCutoffDate" type="date" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="NewGetBalanceRSA_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="decimal" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="NewGetBalanceAVC">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="rSAPIN" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="valueDate" type="date" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="NewGetBalanceAVC_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="decimal" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="NewGetBalanceRSAByFund">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="qRSAPIN" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="fundCode" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="qCutoffDate" type="date" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="NewGetBalanceRSAByFund_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="decimal" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="UpdateRSAEmail">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="employeeID" type="int" />
+            <element minOccurs="1" maxOccurs="1" name="newEmailID" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="UpdateRSAEmail_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="PrintWelcomePack">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="pIN" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="PrintWelcomePack_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="PrintWelcomePackRSA">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="pIN" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="PrintWelcomePackRSA_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="PrintWelcomePackMCP">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="pIN" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="PrintWelcomePackMCP_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="PrintWelcomePackTW">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="pIN" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="PrintWelcomePackTW_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="NewGetBalanceRSAByVD">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="qRSAPIN" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="qCutoffDate" type="date" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="NewGetBalanceRSAByVD_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="decimal" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="SendLeaveApprovalRequest">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="leaveCode" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="SendLeaveApprovalRequest_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="boolean" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="SendClaimApprovalRequest">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="claimsCode" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="SendClaimApprovalRequest_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="boolean" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="SendCashAdvanceRequest">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="cashNo" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="SendCashAdvanceRequest_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="boolean" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="SendAppraisalGoalSettingSecond">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="code" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="SendAppraisalGoalSettingSecond_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="boolean" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="SendAppraisalGoalSettingfirst">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="code" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="SendAppraisalGoalSettingfirst_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="boolean" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="SendHREmployeeReq">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="code" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="SendHREmployeeReq_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="boolean" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="SendHRTraining">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="code" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="SendHRTraining_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="boolean" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="SendHRCanteen">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="code" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="SendHRCanteen_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="boolean" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="SendHREmployeeTransactionHeader">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="code" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="SendHREmployeeTransactionHeader_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="boolean" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="SendHREmployee">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="code" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="SendHREmployee_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="boolean" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="CancelHREmployee">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="code" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="CancelHREmployee_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="boolean" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="HRConfirmationSendToHR">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="code" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="HRConfirmationSendToHR_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="boolean" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="SendConfirmationApproval">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="code" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="SendConfirmationApproval_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="boolean" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="CancelEmployeeApproval">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="code" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="CancelEmployeeApproval_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="boolean" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="OnSendLeaveApprovalRequest">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="leaveCode" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="OnSendLeaveApprovalRequest_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="boolean" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="OnSendStoreReqApprovalRequest">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="storeCode" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="OnSendStoreReqApprovalRequest_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="boolean" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="OnCancelStoreReqApprovalRequest">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="storeCode" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="OnCancelStoreReqApprovalRequest_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="boolean" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="SendPaymentRequest">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="paymentNo" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="SendPaymentRequest_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="boolean" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="UpdateLeaveApp">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="applicationNo" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="UpdateLeaveApp_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="boolean" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="UpdatePaymentReqCashier">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="paymentNo" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="UpdatePaymentReqCashier_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="boolean" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="UpdateUserIDSS">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="docNo" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="documentType" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="UpdateUserIDSS_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="boolean" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="SendCashAdvanceRetirementRequest">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="cashNo" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="SendCashAdvanceRetirementRequest_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="boolean" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="SendAppraisalToSupervisor">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="docNo" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="SendAppraisalToSupervisor_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="boolean" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="GetItemInStore">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="item_Code" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="location_Code" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="GetItemInStore_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="decimal" />
+          </sequence>
+        </complexType>
+      </element>
+    </schema>
+  </types>
+  <message name="GetBalanceRSA">
+    <part name="parameters" element="tns:GetBalanceRSA" />
+  </message>
+  <message name="GetBalanceRSA_Result">
+    <part name="parameters" element="tns:GetBalanceRSA_Result" />
+  </message>
+  <message name="GetBalanceRSAByFund">
+    <part name="parameters" element="tns:GetBalanceRSAByFund" />
+  </message>
+  <message name="GetBalanceRSAByFund_Result">
+    <part name="parameters" element="tns:GetBalanceRSAByFund_Result" />
+  </message>
+  <message name="GetBalanceAVC">
+    <part name="parameters" element="tns:GetBalanceAVC" />
+  </message>
+  <message name="GetBalanceAVC_Result">
+    <part name="parameters" element="tns:GetBalanceAVC_Result" />
+  </message>
+  <message name="GetAVCWithdrawable">
+    <part name="parameters" element="tns:GetAVCWithdrawable" />
+  </message>
+  <message name="GetAVCWithdrawable_Result">
+    <part name="parameters" element="tns:GetAVCWithdrawable_Result" />
+  </message>
+  <message name="GetFundID">
+    <part name="parameters" element="tns:GetFundID" />
+  </message>
+  <message name="GetFundID_Result">
+    <part name="parameters" element="tns:GetFundID_Result" />
+  </message>
+  <message name="GetUnitPriceDate">
+    <part name="parameters" element="tns:GetUnitPriceDate" />
+  </message>
+  <message name="GetUnitPriceDate_Result">
+    <part name="parameters" element="tns:GetUnitPriceDate_Result" />
+  </message>
+  <message name="GetEmployeeID">
+    <part name="parameters" element="tns:GetEmployeeID" />
+  </message>
+  <message name="GetEmployeeID_Result">
+    <part name="parameters" element="tns:GetEmployeeID_Result" />
+  </message>
+  <message name="GeUnitTotalByFund">
+    <part name="parameters" element="tns:GeUnitTotalByFund" />
+  </message>
+  <message name="GeUnitTotalByFund_Result">
+    <part name="parameters" element="tns:GeUnitTotalByFund_Result" />
+  </message>
+  <message name="GetContributionTotal">
+    <part name="parameters" element="tns:GetContributionTotal" />
+  </message>
+  <message name="GetContributionTotal_Result">
+    <part name="parameters" element="tns:GetContributionTotal_Result" />
+  </message>
+  <message name="GetLastValueDate">
+    <part name="parameters" element="tns:GetLastValueDate" />
+  </message>
+  <message name="GetLastValueDate_Result">
+    <part name="parameters" element="tns:GetLastValueDate_Result" />
+  </message>
+  <message name="GetActiveParticpants">
+    <part name="parameters" element="tns:GetActiveParticpants" />
+  </message>
+  <message name="GetActiveParticpants_Result">
+    <part name="parameters" element="tns:GetActiveParticpants_Result" />
+  </message>
+  <message name="GetUnitPrice">
+    <part name="parameters" element="tns:GetUnitPrice" />
+  </message>
+  <message name="GetUnitPrice_Result">
+    <part name="parameters" element="tns:GetUnitPrice_Result" />
+  </message>
+  <message name="GetFundStartDate">
+    <part name="parameters" element="tns:GetFundStartDate" />
+  </message>
+  <message name="GetFundStartDate_Result">
+    <part name="parameters" element="tns:GetFundStartDate_Result" />
+  </message>
+  <message name="GetRetireFundStatus">
+    <part name="parameters" element="tns:GetRetireFundStatus" />
+  </message>
+  <message name="GetRetireFundStatus_Result">
+    <part name="parameters" element="tns:GetRetireFundStatus_Result" />
+  </message>
+  <message name="GetAVCWithdrawableGross">
+    <part name="parameters" element="tns:GetAVCWithdrawableGross" />
+  </message>
+  <message name="GetAVCWithdrawableGross_Result">
+    <part name="parameters" element="tns:GetAVCWithdrawableGross_Result" />
+  </message>
+  <message name="GetBalanceLegacy">
+    <part name="parameters" element="tns:GetBalanceLegacy" />
+  </message>
+  <message name="GetBalanceLegacy_Result">
+    <part name="parameters" element="tns:GetBalanceLegacy_Result" />
+  </message>
+  <message name="GetAVCWithdrawableUnits">
+    <part name="parameters" element="tns:GetAVCWithdrawableUnits" />
+  </message>
+  <message name="GetAVCWithdrawableUnits_Result">
+    <part name="parameters" element="tns:GetAVCWithdrawableUnits_Result" />
+  </message>
+  <message name="GetBalanceAVCGross">
+    <part name="parameters" element="tns:GetBalanceAVCGross" />
+  </message>
+  <message name="GetBalanceAVCGross_Result">
+    <part name="parameters" element="tns:GetBalanceAVCGross_Result" />
+  </message>
+  <message name="UpdateAccessedAvc">
+    <part name="parameters" element="tns:UpdateAccessedAvc" />
+  </message>
+  <message name="UpdateAccessedAvc_Result">
+    <part name="parameters" element="tns:UpdateAccessedAvc_Result" />
+  </message>
+  <message name="ValidatePINReferenceNumber">
+    <part name="parameters" element="tns:ValidatePINReferenceNumber" />
+  </message>
+  <message name="ValidatePINReferenceNumber_Result">
+    <part name="parameters" element="tns:ValidatePINReferenceNumber_Result" />
+  </message>
+  <message name="GetBalanceByFund">
+    <part name="parameters" element="tns:GetBalanceByFund" />
+  </message>
+  <message name="GetBalanceByFund_Result">
+    <part name="parameters" element="tns:GetBalanceByFund_Result" />
+  </message>
+  <message name="GetAVCTaxFree">
+    <part name="parameters" element="tns:GetAVCTaxFree" />
+  </message>
+  <message name="GetAVCTaxFree_Result">
+    <part name="parameters" element="tns:GetAVCTaxFree_Result" />
+  </message>
+  <message name="GetInvestmentIncome">
+    <part name="parameters" element="tns:GetInvestmentIncome" />
+  </message>
+  <message name="GetInvestmentIncome_Result">
+    <part name="parameters" element="tns:GetInvestmentIncome_Result" />
+  </message>
+  <message name="ValidatePWPayment">
+    <part name="parameters" element="tns:ValidatePWPayment" />
+  </message>
+  <message name="ValidatePWPayment_Result">
+    <part name="parameters" element="tns:ValidatePWPayment_Result" />
+  </message>
+  <message name="GetUnitsRSA">
+    <part name="parameters" element="tns:GetUnitsRSA" />
+  </message>
+  <message name="GetUnitsRSA_Result">
+    <part name="parameters" element="tns:GetUnitsRSA_Result" />
+  </message>
+  <message name="GetContributionQtrTotal">
+    <part name="parameters" element="tns:GetContributionQtrTotal" />
+  </message>
+  <message name="GetContributionQtrTotal_Result">
+    <part name="parameters" element="tns:GetContributionQtrTotal_Result" />
+  </message>
+  <message name="GetAVCWithdrawableByFund">
+    <part name="parameters" element="tns:GetAVCWithdrawableByFund" />
+  </message>
+  <message name="GetAVCWithdrawableByFund_Result">
+    <part name="parameters" element="tns:GetAVCWithdrawableByFund_Result" />
+  </message>
+  <message name="DREConfirmed">
+    <part name="parameters" element="tns:DREConfirmed" />
+  </message>
+  <message name="DREConfirmed_Result">
+    <part name="parameters" element="tns:DREConfirmed_Result" />
+  </message>
+  <message name="DREBiometrics">
+    <part name="parameters" element="tns:DREBiometrics" />
+  </message>
+  <message name="DREBiometrics_Result">
+    <part name="parameters" element="tns:DREBiometrics_Result" />
+  </message>
+  <message name="DREInsert">
+    <part name="parameters" element="tns:DREInsert" />
+  </message>
+  <message name="DREInsert_Result">
+    <part name="parameters" element="tns:DREInsert_Result" />
+  </message>
+  <message name="ClearDRE">
+    <part name="parameters" element="tns:ClearDRE" />
+  </message>
+  <message name="ClearDRE_Result">
+    <part name="parameters" element="tns:ClearDRE_Result" />
+  </message>
+  <message name="NewGetBalanceRSA">
+    <part name="parameters" element="tns:NewGetBalanceRSA" />
+  </message>
+  <message name="NewGetBalanceRSA_Result">
+    <part name="parameters" element="tns:NewGetBalanceRSA_Result" />
+  </message>
+  <message name="NewGetBalanceAVC">
+    <part name="parameters" element="tns:NewGetBalanceAVC" />
+  </message>
+  <message name="NewGetBalanceAVC_Result">
+    <part name="parameters" element="tns:NewGetBalanceAVC_Result" />
+  </message>
+  <message name="NewGetBalanceRSAByFund">
+    <part name="parameters" element="tns:NewGetBalanceRSAByFund" />
+  </message>
+  <message name="NewGetBalanceRSAByFund_Result">
+    <part name="parameters" element="tns:NewGetBalanceRSAByFund_Result" />
+  </message>
+  <message name="UpdateRSAEmail">
+    <part name="parameters" element="tns:UpdateRSAEmail" />
+  </message>
+  <message name="UpdateRSAEmail_Result">
+    <part name="parameters" element="tns:UpdateRSAEmail_Result" />
+  </message>
+  <message name="PrintWelcomePack">
+    <part name="parameters" element="tns:PrintWelcomePack" />
+  </message>
+  <message name="PrintWelcomePack_Result">
+    <part name="parameters" element="tns:PrintWelcomePack_Result" />
+  </message>
+  <message name="PrintWelcomePackRSA">
+    <part name="parameters" element="tns:PrintWelcomePackRSA" />
+  </message>
+  <message name="PrintWelcomePackRSA_Result">
+    <part name="parameters" element="tns:PrintWelcomePackRSA_Result" />
+  </message>
+  <message name="PrintWelcomePackMCP">
+    <part name="parameters" element="tns:PrintWelcomePackMCP" />
+  </message>
+  <message name="PrintWelcomePackMCP_Result">
+    <part name="parameters" element="tns:PrintWelcomePackMCP_Result" />
+  </message>
+  <message name="PrintWelcomePackTW">
+    <part name="parameters" element="tns:PrintWelcomePackTW" />
+  </message>
+  <message name="PrintWelcomePackTW_Result">
+    <part name="parameters" element="tns:PrintWelcomePackTW_Result" />
+  </message>
+  <message name="NewGetBalanceRSAByVD">
+    <part name="parameters" element="tns:NewGetBalanceRSAByVD" />
+  </message>
+  <message name="NewGetBalanceRSAByVD_Result">
+    <part name="parameters" element="tns:NewGetBalanceRSAByVD_Result" />
+  </message>
+  <message name="SendLeaveApprovalRequest">
+    <part name="parameters" element="tns:SendLeaveApprovalRequest" />
+  </message>
+  <message name="SendLeaveApprovalRequest_Result">
+    <part name="parameters" element="tns:SendLeaveApprovalRequest_Result" />
+  </message>
+  <message name="SendClaimApprovalRequest">
+    <part name="parameters" element="tns:SendClaimApprovalRequest" />
+  </message>
+  <message name="SendClaimApprovalRequest_Result">
+    <part name="parameters" element="tns:SendClaimApprovalRequest_Result" />
+  </message>
+  <message name="SendCashAdvanceRequest">
+    <part name="parameters" element="tns:SendCashAdvanceRequest" />
+  </message>
+  <message name="SendCashAdvanceRequest_Result">
+    <part name="parameters" element="tns:SendCashAdvanceRequest_Result" />
+  </message>
+  <message name="SendAppraisalGoalSettingSecond">
+    <part name="parameters" element="tns:SendAppraisalGoalSettingSecond" />
+  </message>
+  <message name="SendAppraisalGoalSettingSecond_Result">
+    <part name="parameters" element="tns:SendAppraisalGoalSettingSecond_Result" />
+  </message>
+  <message name="SendAppraisalGoalSettingfirst">
+    <part name="parameters" element="tns:SendAppraisalGoalSettingfirst" />
+  </message>
+  <message name="SendAppraisalGoalSettingfirst_Result">
+    <part name="parameters" element="tns:SendAppraisalGoalSettingfirst_Result" />
+  </message>
+  <message name="SendHREmployeeReq">
+    <part name="parameters" element="tns:SendHREmployeeReq" />
+  </message>
+  <message name="SendHREmployeeReq_Result">
+    <part name="parameters" element="tns:SendHREmployeeReq_Result" />
+  </message>
+  <message name="SendHRTraining">
+    <part name="parameters" element="tns:SendHRTraining" />
+  </message>
+  <message name="SendHRTraining_Result">
+    <part name="parameters" element="tns:SendHRTraining_Result" />
+  </message>
+  <message name="SendHRCanteen">
+    <part name="parameters" element="tns:SendHRCanteen" />
+  </message>
+  <message name="SendHRCanteen_Result">
+    <part name="parameters" element="tns:SendHRCanteen_Result" />
+  </message>
+  <message name="SendHREmployeeTransactionHeader">
+    <part name="parameters" element="tns:SendHREmployeeTransactionHeader" />
+  </message>
+  <message name="SendHREmployeeTransactionHeader_Result">
+    <part name="parameters" element="tns:SendHREmployeeTransactionHeader_Result" />
+  </message>
+  <message name="SendHREmployee">
+    <part name="parameters" element="tns:SendHREmployee" />
+  </message>
+  <message name="SendHREmployee_Result">
+    <part name="parameters" element="tns:SendHREmployee_Result" />
+  </message>
+  <message name="CancelHREmployee">
+    <part name="parameters" element="tns:CancelHREmployee" />
+  </message>
+  <message name="CancelHREmployee_Result">
+    <part name="parameters" element="tns:CancelHREmployee_Result" />
+  </message>
+  <message name="HRConfirmationSendToHR">
+    <part name="parameters" element="tns:HRConfirmationSendToHR" />
+  </message>
+  <message name="HRConfirmationSendToHR_Result">
+    <part name="parameters" element="tns:HRConfirmationSendToHR_Result" />
+  </message>
+  <message name="SendConfirmationApproval">
+    <part name="parameters" element="tns:SendConfirmationApproval" />
+  </message>
+  <message name="SendConfirmationApproval_Result">
+    <part name="parameters" element="tns:SendConfirmationApproval_Result" />
+  </message>
+  <message name="CancelEmployeeApproval">
+    <part name="parameters" element="tns:CancelEmployeeApproval" />
+  </message>
+  <message name="CancelEmployeeApproval_Result">
+    <part name="parameters" element="tns:CancelEmployeeApproval_Result" />
+  </message>
+  <message name="OnSendLeaveApprovalRequest">
+    <part name="parameters" element="tns:OnSendLeaveApprovalRequest" />
+  </message>
+  <message name="OnSendLeaveApprovalRequest_Result">
+    <part name="parameters" element="tns:OnSendLeaveApprovalRequest_Result" />
+  </message>
+  <message name="OnSendStoreReqApprovalRequest">
+    <part name="parameters" element="tns:OnSendStoreReqApprovalRequest" />
+  </message>
+  <message name="OnSendStoreReqApprovalRequest_Result">
+    <part name="parameters" element="tns:OnSendStoreReqApprovalRequest_Result" />
+  </message>
+  <message name="OnCancelStoreReqApprovalRequest">
+    <part name="parameters" element="tns:OnCancelStoreReqApprovalRequest" />
+  </message>
+  <message name="OnCancelStoreReqApprovalRequest_Result">
+    <part name="parameters" element="tns:OnCancelStoreReqApprovalRequest_Result" />
+  </message>
+  <message name="SendPaymentRequest">
+    <part name="parameters" element="tns:SendPaymentRequest" />
+  </message>
+  <message name="SendPaymentRequest_Result">
+    <part name="parameters" element="tns:SendPaymentRequest_Result" />
+  </message>
+  <message name="UpdateLeaveApp">
+    <part name="parameters" element="tns:UpdateLeaveApp" />
+  </message>
+  <message name="UpdateLeaveApp_Result">
+    <part name="parameters" element="tns:UpdateLeaveApp_Result" />
+  </message>
+  <message name="UpdatePaymentReqCashier">
+    <part name="parameters" element="tns:UpdatePaymentReqCashier" />
+  </message>
+  <message name="UpdatePaymentReqCashier_Result">
+    <part name="parameters" element="tns:UpdatePaymentReqCashier_Result" />
+  </message>
+  <message name="UpdateUserIDSS">
+    <part name="parameters" element="tns:UpdateUserIDSS" />
+  </message>
+  <message name="UpdateUserIDSS_Result">
+    <part name="parameters" element="tns:UpdateUserIDSS_Result" />
+  </message>
+  <message name="SendCashAdvanceRetirementRequest">
+    <part name="parameters" element="tns:SendCashAdvanceRetirementRequest" />
+  </message>
+  <message name="SendCashAdvanceRetirementRequest_Result">
+    <part name="parameters" element="tns:SendCashAdvanceRetirementRequest_Result" />
+  </message>
+  <message name="SendAppraisalToSupervisor">
+    <part name="parameters" element="tns:SendAppraisalToSupervisor" />
+  </message>
+  <message name="SendAppraisalToSupervisor_Result">
+    <part name="parameters" element="tns:SendAppraisalToSupervisor_Result" />
+  </message>
+  <message name="GetItemInStore">
+    <part name="parameters" element="tns:GetItemInStore" />
+  </message>
+  <message name="GetItemInStore_Result">
+    <part name="parameters" element="tns:GetItemInStore_Result" />
+  </message>
+  <portType name="pfagetbalance_Port">
+    <operation name="GetBalanceRSA">
+      <input name="GetBalanceRSA" message="tns:GetBalanceRSA" />
+      <output name="GetBalanceRSA_Result" message="tns:GetBalanceRSA_Result" />
+    </operation>
+    <operation name="GetBalanceRSAByFund">
+      <input name="GetBalanceRSAByFund" message="tns:GetBalanceRSAByFund" />
+      <output name="GetBalanceRSAByFund_Result" message="tns:GetBalanceRSAByFund_Result" />
+    </operation>
+    <operation name="GetBalanceAVC">
+      <input name="GetBalanceAVC" message="tns:GetBalanceAVC" />
+      <output name="GetBalanceAVC_Result" message="tns:GetBalanceAVC_Result" />
+    </operation>
+    <operation name="GetAVCWithdrawable">
+      <input name="GetAVCWithdrawable" message="tns:GetAVCWithdrawable" />
+      <output name="GetAVCWithdrawable_Result" message="tns:GetAVCWithdrawable_Result" />
+    </operation>
+    <operation name="GetFundID">
+      <input name="GetFundID" message="tns:GetFundID" />
+      <output name="GetFundID_Result" message="tns:GetFundID_Result" />
+    </operation>
+    <operation name="GetUnitPriceDate">
+      <input name="GetUnitPriceDate" message="tns:GetUnitPriceDate" />
+      <output name="GetUnitPriceDate_Result" message="tns:GetUnitPriceDate_Result" />
+    </operation>
+    <operation name="GetEmployeeID">
+      <input name="GetEmployeeID" message="tns:GetEmployeeID" />
+      <output name="GetEmployeeID_Result" message="tns:GetEmployeeID_Result" />
+    </operation>
+    <operation name="GeUnitTotalByFund">
+      <input name="GeUnitTotalByFund" message="tns:GeUnitTotalByFund" />
+      <output name="GeUnitTotalByFund_Result" message="tns:GeUnitTotalByFund_Result" />
+    </operation>
+    <operation name="GetContributionTotal">
+      <input name="GetContributionTotal" message="tns:GetContributionTotal" />
+      <output name="GetContributionTotal_Result" message="tns:GetContributionTotal_Result" />
+    </operation>
+    <operation name="GetLastValueDate">
+      <input name="GetLastValueDate" message="tns:GetLastValueDate" />
+      <output name="GetLastValueDate_Result" message="tns:GetLastValueDate_Result" />
+    </operation>
+    <operation name="GetActiveParticpants">
+      <input name="GetActiveParticpants" message="tns:GetActiveParticpants" />
+      <output name="GetActiveParticpants_Result" message="tns:GetActiveParticpants_Result" />
+    </operation>
+    <operation name="GetUnitPrice">
+      <input name="GetUnitPrice" message="tns:GetUnitPrice" />
+      <output name="GetUnitPrice_Result" message="tns:GetUnitPrice_Result" />
+    </operation>
+    <operation name="GetFundStartDate">
+      <input name="GetFundStartDate" message="tns:GetFundStartDate" />
+      <output name="GetFundStartDate_Result" message="tns:GetFundStartDate_Result" />
+    </operation>
+    <operation name="GetRetireFundStatus">
+      <input name="GetRetireFundStatus" message="tns:GetRetireFundStatus" />
+      <output name="GetRetireFundStatus_Result" message="tns:GetRetireFundStatus_Result" />
+    </operation>
+    <operation name="GetAVCWithdrawableGross">
+      <input name="GetAVCWithdrawableGross" message="tns:GetAVCWithdrawableGross" />
+      <output name="GetAVCWithdrawableGross_Result" message="tns:GetAVCWithdrawableGross_Result" />
+    </operation>
+    <operation name="GetBalanceLegacy">
+      <input name="GetBalanceLegacy" message="tns:GetBalanceLegacy" />
+      <output name="GetBalanceLegacy_Result" message="tns:GetBalanceLegacy_Result" />
+    </operation>
+    <operation name="GetAVCWithdrawableUnits">
+      <input name="GetAVCWithdrawableUnits" message="tns:GetAVCWithdrawableUnits" />
+      <output name="GetAVCWithdrawableUnits_Result" message="tns:GetAVCWithdrawableUnits_Result" />
+    </operation>
+    <operation name="GetBalanceAVCGross">
+      <input name="GetBalanceAVCGross" message="tns:GetBalanceAVCGross" />
+      <output name="GetBalanceAVCGross_Result" message="tns:GetBalanceAVCGross_Result" />
+    </operation>
+    <operation name="UpdateAccessedAvc">
+      <input name="UpdateAccessedAvc" message="tns:UpdateAccessedAvc" />
+      <output name="UpdateAccessedAvc_Result" message="tns:UpdateAccessedAvc_Result" />
+    </operation>
+    <operation name="ValidatePINReferenceNumber">
+      <input name="ValidatePINReferenceNumber" message="tns:ValidatePINReferenceNumber" />
+      <output name="ValidatePINReferenceNumber_Result" message="tns:ValidatePINReferenceNumber_Result" />
+    </operation>
+    <operation name="GetBalanceByFund">
+      <input name="GetBalanceByFund" message="tns:GetBalanceByFund" />
+      <output name="GetBalanceByFund_Result" message="tns:GetBalanceByFund_Result" />
+    </operation>
+    <operation name="GetAVCTaxFree">
+      <input name="GetAVCTaxFree" message="tns:GetAVCTaxFree" />
+      <output name="GetAVCTaxFree_Result" message="tns:GetAVCTaxFree_Result" />
+    </operation>
+    <operation name="GetInvestmentIncome">
+      <input name="GetInvestmentIncome" message="tns:GetInvestmentIncome" />
+      <output name="GetInvestmentIncome_Result" message="tns:GetInvestmentIncome_Result" />
+    </operation>
+    <operation name="ValidatePWPayment">
+      <input name="ValidatePWPayment" message="tns:ValidatePWPayment" />
+      <output name="ValidatePWPayment_Result" message="tns:ValidatePWPayment_Result" />
+    </operation>
+    <operation name="GetUnitsRSA">
+      <input name="GetUnitsRSA" message="tns:GetUnitsRSA" />
+      <output name="GetUnitsRSA_Result" message="tns:GetUnitsRSA_Result" />
+    </operation>
+    <operation name="GetContributionQtrTotal">
+      <input name="GetContributionQtrTotal" message="tns:GetContributionQtrTotal" />
+      <output name="GetContributionQtrTotal_Result" message="tns:GetContributionQtrTotal_Result" />
+    </operation>
+    <operation name="GetAVCWithdrawableByFund">
+      <input name="GetAVCWithdrawableByFund" message="tns:GetAVCWithdrawableByFund" />
+      <output name="GetAVCWithdrawableByFund_Result" message="tns:GetAVCWithdrawableByFund_Result" />
+    </operation>
+    <operation name="DREConfirmed">
+      <input name="DREConfirmed" message="tns:DREConfirmed" />
+      <output name="DREConfirmed_Result" message="tns:DREConfirmed_Result" />
+    </operation>
+    <operation name="DREBiometrics">
+      <input name="DREBiometrics" message="tns:DREBiometrics" />
+      <output name="DREBiometrics_Result" message="tns:DREBiometrics_Result" />
+    </operation>
+    <operation name="DREInsert">
+      <input name="DREInsert" message="tns:DREInsert" />
+      <output name="DREInsert_Result" message="tns:DREInsert_Result" />
+    </operation>
+    <operation name="ClearDRE">
+      <input name="ClearDRE" message="tns:ClearDRE" />
+      <output name="ClearDRE_Result" message="tns:ClearDRE_Result" />
+    </operation>
+    <operation name="NewGetBalanceRSA">
+      <input name="NewGetBalanceRSA" message="tns:NewGetBalanceRSA" />
+      <output name="NewGetBalanceRSA_Result" message="tns:NewGetBalanceRSA_Result" />
+    </operation>
+    <operation name="NewGetBalanceAVC">
+      <input name="NewGetBalanceAVC" message="tns:NewGetBalanceAVC" />
+      <output name="NewGetBalanceAVC_Result" message="tns:NewGetBalanceAVC_Result" />
+    </operation>
+    <operation name="NewGetBalanceRSAByFund">
+      <input name="NewGetBalanceRSAByFund" message="tns:NewGetBalanceRSAByFund" />
+      <output name="NewGetBalanceRSAByFund_Result" message="tns:NewGetBalanceRSAByFund_Result" />
+    </operation>
+    <operation name="UpdateRSAEmail">
+      <input name="UpdateRSAEmail" message="tns:UpdateRSAEmail" />
+      <output name="UpdateRSAEmail_Result" message="tns:UpdateRSAEmail_Result" />
+    </operation>
+    <operation name="PrintWelcomePack">
+      <input name="PrintWelcomePack" message="tns:PrintWelcomePack" />
+      <output name="PrintWelcomePack_Result" message="tns:PrintWelcomePack_Result" />
+    </operation>
+    <operation name="PrintWelcomePackRSA">
+      <input name="PrintWelcomePackRSA" message="tns:PrintWelcomePackRSA" />
+      <output name="PrintWelcomePackRSA_Result" message="tns:PrintWelcomePackRSA_Result" />
+    </operation>
+    <operation name="PrintWelcomePackMCP">
+      <input name="PrintWelcomePackMCP" message="tns:PrintWelcomePackMCP" />
+      <output name="PrintWelcomePackMCP_Result" message="tns:PrintWelcomePackMCP_Result" />
+    </operation>
+    <operation name="PrintWelcomePackTW">
+      <input name="PrintWelcomePackTW" message="tns:PrintWelcomePackTW" />
+      <output name="PrintWelcomePackTW_Result" message="tns:PrintWelcomePackTW_Result" />
+    </operation>
+    <operation name="NewGetBalanceRSAByVD">
+      <input name="NewGetBalanceRSAByVD" message="tns:NewGetBalanceRSAByVD" />
+      <output name="NewGetBalanceRSAByVD_Result" message="tns:NewGetBalanceRSAByVD_Result" />
+    </operation>
+    <operation name="SendLeaveApprovalRequest">
+      <input name="SendLeaveApprovalRequest" message="tns:SendLeaveApprovalRequest" />
+      <output name="SendLeaveApprovalRequest_Result" message="tns:SendLeaveApprovalRequest_Result" />
+    </operation>
+    <operation name="SendClaimApprovalRequest">
+      <input name="SendClaimApprovalRequest" message="tns:SendClaimApprovalRequest" />
+      <output name="SendClaimApprovalRequest_Result" message="tns:SendClaimApprovalRequest_Result" />
+    </operation>
+    <operation name="SendCashAdvanceRequest">
+      <input name="SendCashAdvanceRequest" message="tns:SendCashAdvanceRequest" />
+      <output name="SendCashAdvanceRequest_Result" message="tns:SendCashAdvanceRequest_Result" />
+    </operation>
+    <operation name="SendAppraisalGoalSettingSecond">
+      <input name="SendAppraisalGoalSettingSecond" message="tns:SendAppraisalGoalSettingSecond" />
+      <output name="SendAppraisalGoalSettingSecond_Result" message="tns:SendAppraisalGoalSettingSecond_Result" />
+    </operation>
+    <operation name="SendAppraisalGoalSettingfirst">
+      <input name="SendAppraisalGoalSettingfirst" message="tns:SendAppraisalGoalSettingfirst" />
+      <output name="SendAppraisalGoalSettingfirst_Result" message="tns:SendAppraisalGoalSettingfirst_Result" />
+    </operation>
+    <operation name="SendHREmployeeReq">
+      <input name="SendHREmployeeReq" message="tns:SendHREmployeeReq" />
+      <output name="SendHREmployeeReq_Result" message="tns:SendHREmployeeReq_Result" />
+    </operation>
+    <operation name="SendHRTraining">
+      <input name="SendHRTraining" message="tns:SendHRTraining" />
+      <output name="SendHRTraining_Result" message="tns:SendHRTraining_Result" />
+    </operation>
+    <operation name="SendHRCanteen">
+      <input name="SendHRCanteen" message="tns:SendHRCanteen" />
+      <output name="SendHRCanteen_Result" message="tns:SendHRCanteen_Result" />
+    </operation>
+    <operation name="SendHREmployeeTransactionHeader">
+      <input name="SendHREmployeeTransactionHeader" message="tns:SendHREmployeeTransactionHeader" />
+      <output name="SendHREmployeeTransactionHeader_Result" message="tns:SendHREmployeeTransactionHeader_Result" />
+    </operation>
+    <operation name="SendHREmployee">
+      <input name="SendHREmployee" message="tns:SendHREmployee" />
+      <output name="SendHREmployee_Result" message="tns:SendHREmployee_Result" />
+    </operation>
+    <operation name="CancelHREmployee">
+      <input name="CancelHREmployee" message="tns:CancelHREmployee" />
+      <output name="CancelHREmployee_Result" message="tns:CancelHREmployee_Result" />
+    </operation>
+    <operation name="HRConfirmationSendToHR">
+      <input name="HRConfirmationSendToHR" message="tns:HRConfirmationSendToHR" />
+      <output name="HRConfirmationSendToHR_Result" message="tns:HRConfirmationSendToHR_Result" />
+    </operation>
+    <operation name="SendConfirmationApproval">
+      <input name="SendConfirmationApproval" message="tns:SendConfirmationApproval" />
+      <output name="SendConfirmationApproval_Result" message="tns:SendConfirmationApproval_Result" />
+    </operation>
+    <operation name="CancelEmployeeApproval">
+      <input name="CancelEmployeeApproval" message="tns:CancelEmployeeApproval" />
+      <output name="CancelEmployeeApproval_Result" message="tns:CancelEmployeeApproval_Result" />
+    </operation>
+    <operation name="OnSendLeaveApprovalRequest">
+      <input name="OnSendLeaveApprovalRequest" message="tns:OnSendLeaveApprovalRequest" />
+      <output name="OnSendLeaveApprovalRequest_Result" message="tns:OnSendLeaveApprovalRequest_Result" />
+    </operation>
+    <operation name="OnSendStoreReqApprovalRequest">
+      <input name="OnSendStoreReqApprovalRequest" message="tns:OnSendStoreReqApprovalRequest" />
+      <output name="OnSendStoreReqApprovalRequest_Result" message="tns:OnSendStoreReqApprovalRequest_Result" />
+    </operation>
+    <operation name="OnCancelStoreReqApprovalRequest">
+      <input name="OnCancelStoreReqApprovalRequest" message="tns:OnCancelStoreReqApprovalRequest" />
+      <output name="OnCancelStoreReqApprovalRequest_Result" message="tns:OnCancelStoreReqApprovalRequest_Result" />
+    </operation>
+    <operation name="SendPaymentRequest">
+      <input name="SendPaymentRequest" message="tns:SendPaymentRequest" />
+      <output name="SendPaymentRequest_Result" message="tns:SendPaymentRequest_Result" />
+    </operation>
+    <operation name="UpdateLeaveApp">
+      <input name="UpdateLeaveApp" message="tns:UpdateLeaveApp" />
+      <output name="UpdateLeaveApp_Result" message="tns:UpdateLeaveApp_Result" />
+    </operation>
+    <operation name="UpdatePaymentReqCashier">
+      <input name="UpdatePaymentReqCashier" message="tns:UpdatePaymentReqCashier" />
+      <output name="UpdatePaymentReqCashier_Result" message="tns:UpdatePaymentReqCashier_Result" />
+    </operation>
+    <operation name="UpdateUserIDSS">
+      <input name="UpdateUserIDSS" message="tns:UpdateUserIDSS" />
+      <output name="UpdateUserIDSS_Result" message="tns:UpdateUserIDSS_Result" />
+    </operation>
+    <operation name="SendCashAdvanceRetirementRequest">
+      <input name="SendCashAdvanceRetirementRequest" message="tns:SendCashAdvanceRetirementRequest" />
+      <output name="SendCashAdvanceRetirementRequest_Result" message="tns:SendCashAdvanceRetirementRequest_Result" />
+    </operation>
+    <operation name="SendAppraisalToSupervisor">
+      <input name="SendAppraisalToSupervisor" message="tns:SendAppraisalToSupervisor" />
+      <output name="SendAppraisalToSupervisor_Result" message="tns:SendAppraisalToSupervisor_Result" />
+    </operation>
+    <operation name="GetItemInStore">
+      <input name="GetItemInStore" message="tns:GetItemInStore" />
+      <output name="GetItemInStore_Result" message="tns:GetItemInStore_Result" />
+    </operation>
+  </portType>
+  <binding name="pfagetbalance_Binding" type="tns:pfagetbalance_Port">
+    <binding transport="http://schemas.xmlsoap.org/soap/http" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+    <operation name="GetBalanceRSA">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/pfagetbalance:GetBalanceRSA" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="GetBalanceRSA">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="GetBalanceRSA_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="GetBalanceRSAByFund">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/pfagetbalance:GetBalanceRSAByFund" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="GetBalanceRSAByFund">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="GetBalanceRSAByFund_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="GetBalanceAVC">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/pfagetbalance:GetBalanceAVC" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="GetBalanceAVC">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="GetBalanceAVC_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="GetAVCWithdrawable">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/pfagetbalance:GetAVCWithdrawable" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="GetAVCWithdrawable">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="GetAVCWithdrawable_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="GetFundID">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/pfagetbalance:GetFundID" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="GetFundID">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="GetFundID_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="GetUnitPriceDate">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/pfagetbalance:GetUnitPriceDate" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="GetUnitPriceDate">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="GetUnitPriceDate_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="GetEmployeeID">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/pfagetbalance:GetEmployeeID" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="GetEmployeeID">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="GetEmployeeID_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="GeUnitTotalByFund">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/pfagetbalance:GeUnitTotalByFund" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="GeUnitTotalByFund">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="GeUnitTotalByFund_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="GetContributionTotal">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/pfagetbalance:GetContributionTotal" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="GetContributionTotal">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="GetContributionTotal_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="GetLastValueDate">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/pfagetbalance:GetLastValueDate" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="GetLastValueDate">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="GetLastValueDate_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="GetActiveParticpants">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/pfagetbalance:GetActiveParticpants" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="GetActiveParticpants">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="GetActiveParticpants_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="GetUnitPrice">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/pfagetbalance:GetUnitPrice" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="GetUnitPrice">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="GetUnitPrice_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="GetFundStartDate">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/pfagetbalance:GetFundStartDate" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="GetFundStartDate">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="GetFundStartDate_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="GetRetireFundStatus">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/pfagetbalance:GetRetireFundStatus" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="GetRetireFundStatus">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="GetRetireFundStatus_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="GetAVCWithdrawableGross">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/pfagetbalance:GetAVCWithdrawableGross" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="GetAVCWithdrawableGross">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="GetAVCWithdrawableGross_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="GetBalanceLegacy">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/pfagetbalance:GetBalanceLegacy" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="GetBalanceLegacy">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="GetBalanceLegacy_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="GetAVCWithdrawableUnits">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/pfagetbalance:GetAVCWithdrawableUnits" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="GetAVCWithdrawableUnits">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="GetAVCWithdrawableUnits_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="GetBalanceAVCGross">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/pfagetbalance:GetBalanceAVCGross" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="GetBalanceAVCGross">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="GetBalanceAVCGross_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="UpdateAccessedAvc">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/pfagetbalance:UpdateAccessedAvc" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="UpdateAccessedAvc">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="UpdateAccessedAvc_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="ValidatePINReferenceNumber">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/pfagetbalance:ValidatePINReferenceNumber" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="ValidatePINReferenceNumber">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="ValidatePINReferenceNumber_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="GetBalanceByFund">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/pfagetbalance:GetBalanceByFund" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="GetBalanceByFund">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="GetBalanceByFund_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="GetAVCTaxFree">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/pfagetbalance:GetAVCTaxFree" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="GetAVCTaxFree">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="GetAVCTaxFree_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="GetInvestmentIncome">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/pfagetbalance:GetInvestmentIncome" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="GetInvestmentIncome">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="GetInvestmentIncome_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="ValidatePWPayment">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/pfagetbalance:ValidatePWPayment" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="ValidatePWPayment">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="ValidatePWPayment_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="GetUnitsRSA">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/pfagetbalance:GetUnitsRSA" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="GetUnitsRSA">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="GetUnitsRSA_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="GetContributionQtrTotal">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/pfagetbalance:GetContributionQtrTotal" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="GetContributionQtrTotal">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="GetContributionQtrTotal_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="GetAVCWithdrawableByFund">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/pfagetbalance:GetAVCWithdrawableByFund" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="GetAVCWithdrawableByFund">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="GetAVCWithdrawableByFund_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="DREConfirmed">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/pfagetbalance:DREConfirmed" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="DREConfirmed">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="DREConfirmed_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="DREBiometrics">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/pfagetbalance:DREBiometrics" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="DREBiometrics">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="DREBiometrics_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="DREInsert">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/pfagetbalance:DREInsert" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="DREInsert">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="DREInsert_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="ClearDRE">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/pfagetbalance:ClearDRE" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="ClearDRE">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="ClearDRE_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="NewGetBalanceRSA">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/pfagetbalance:NewGetBalanceRSA" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="NewGetBalanceRSA">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="NewGetBalanceRSA_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="NewGetBalanceAVC">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/pfagetbalance:NewGetBalanceAVC" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="NewGetBalanceAVC">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="NewGetBalanceAVC_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="NewGetBalanceRSAByFund">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/pfagetbalance:NewGetBalanceRSAByFund" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="NewGetBalanceRSAByFund">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="NewGetBalanceRSAByFund_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="UpdateRSAEmail">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/pfagetbalance:UpdateRSAEmail" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="UpdateRSAEmail">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="UpdateRSAEmail_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="PrintWelcomePack">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/pfagetbalance:PrintWelcomePack" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="PrintWelcomePack">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="PrintWelcomePack_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="PrintWelcomePackRSA">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/pfagetbalance:PrintWelcomePackRSA" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="PrintWelcomePackRSA">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="PrintWelcomePackRSA_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="PrintWelcomePackMCP">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/pfagetbalance:PrintWelcomePackMCP" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="PrintWelcomePackMCP">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="PrintWelcomePackMCP_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="PrintWelcomePackTW">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/pfagetbalance:PrintWelcomePackTW" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="PrintWelcomePackTW">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="PrintWelcomePackTW_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="NewGetBalanceRSAByVD">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/pfagetbalance:NewGetBalanceRSAByVD" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="NewGetBalanceRSAByVD">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="NewGetBalanceRSAByVD_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="SendLeaveApprovalRequest">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/pfagetbalance:SendLeaveApprovalRequest" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="SendLeaveApprovalRequest">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="SendLeaveApprovalRequest_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="SendClaimApprovalRequest">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/pfagetbalance:SendClaimApprovalRequest" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="SendClaimApprovalRequest">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="SendClaimApprovalRequest_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="SendCashAdvanceRequest">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/pfagetbalance:SendCashAdvanceRequest" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="SendCashAdvanceRequest">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="SendCashAdvanceRequest_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="SendAppraisalGoalSettingSecond">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/pfagetbalance:SendAppraisalGoalSettingSecond" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="SendAppraisalGoalSettingSecond">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="SendAppraisalGoalSettingSecond_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="SendAppraisalGoalSettingfirst">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/pfagetbalance:SendAppraisalGoalSettingfirst" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="SendAppraisalGoalSettingfirst">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="SendAppraisalGoalSettingfirst_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="SendHREmployeeReq">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/pfagetbalance:SendHREmployeeReq" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="SendHREmployeeReq">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="SendHREmployeeReq_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="SendHRTraining">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/pfagetbalance:SendHRTraining" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="SendHRTraining">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="SendHRTraining_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="SendHRCanteen">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/pfagetbalance:SendHRCanteen" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="SendHRCanteen">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="SendHRCanteen_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="SendHREmployeeTransactionHeader">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/pfagetbalance:SendHREmployeeTransactionHeader" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="SendHREmployeeTransactionHeader">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="SendHREmployeeTransactionHeader_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="SendHREmployee">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/pfagetbalance:SendHREmployee" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="SendHREmployee">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="SendHREmployee_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="CancelHREmployee">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/pfagetbalance:CancelHREmployee" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="CancelHREmployee">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="CancelHREmployee_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="HRConfirmationSendToHR">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/pfagetbalance:HRConfirmationSendToHR" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="HRConfirmationSendToHR">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="HRConfirmationSendToHR_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="SendConfirmationApproval">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/pfagetbalance:SendConfirmationApproval" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="SendConfirmationApproval">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="SendConfirmationApproval_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="CancelEmployeeApproval">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/pfagetbalance:CancelEmployeeApproval" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="CancelEmployeeApproval">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="CancelEmployeeApproval_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="OnSendLeaveApprovalRequest">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/pfagetbalance:OnSendLeaveApprovalRequest" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="OnSendLeaveApprovalRequest">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="OnSendLeaveApprovalRequest_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="OnSendStoreReqApprovalRequest">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/pfagetbalance:OnSendStoreReqApprovalRequest" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="OnSendStoreReqApprovalRequest">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="OnSendStoreReqApprovalRequest_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="OnCancelStoreReqApprovalRequest">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/pfagetbalance:OnCancelStoreReqApprovalRequest" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="OnCancelStoreReqApprovalRequest">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="OnCancelStoreReqApprovalRequest_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="SendPaymentRequest">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/pfagetbalance:SendPaymentRequest" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="SendPaymentRequest">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="SendPaymentRequest_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="UpdateLeaveApp">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/pfagetbalance:UpdateLeaveApp" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="UpdateLeaveApp">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="UpdateLeaveApp_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="UpdatePaymentReqCashier">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/pfagetbalance:UpdatePaymentReqCashier" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="UpdatePaymentReqCashier">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="UpdatePaymentReqCashier_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="UpdateUserIDSS">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/pfagetbalance:UpdateUserIDSS" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="UpdateUserIDSS">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="UpdateUserIDSS_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="SendCashAdvanceRetirementRequest">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/pfagetbalance:SendCashAdvanceRetirementRequest" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="SendCashAdvanceRetirementRequest">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="SendCashAdvanceRetirementRequest_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="SendAppraisalToSupervisor">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/pfagetbalance:SendAppraisalToSupervisor" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="SendAppraisalToSupervisor">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="SendAppraisalToSupervisor_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="GetItemInStore">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/pfagetbalance:GetItemInStore" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="GetItemInStore">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="GetItemInStore_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+  </binding>
+  <service name="pfagetbalance">
+    <port name="pfagetbalance_Port" binding="tns:pfagetbalance_Binding">
+      <address location="http://nav_app.pensure-nigeria.com:14047/LPPFABC/WS/PENSURE%20SHAREHOLDERS%20FUNDS/Codeunit/pfagetbalance" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+    </port>
+  </service>
+</definitions>
